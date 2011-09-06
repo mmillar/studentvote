@@ -1,0 +1,469 @@
+/**
+  Theme Name: Naked
+  Theme URI: http://code.google.com/p/wordpress-naked/
+  Version: 1.2
+  Author: Siftware
+  Author URI: http://www.siftware.co.uk
+  Tags: simple, clean, fixed width, widget-ready, widgets, right sidebar, two columns, valid XHTML, valid CSS, blank-slate
+  Licence: LGPL
+  
+  Description: A theme created with developers in mind which should enable rapid WP reskinning. The CSS is minimal but consistent cross-browser, there are a couple of SEO tweaks and the page navigation works sensibly but can modified easily.
+
+  The CSS that follows is the bare minimum of styling for a two column, fixed width and centred layout that should be
+  consistent in 'modern browsers'
+*/
+
+html {
+  overflow-y: scroll;
+}
+
+body {  
+       color:#000000;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size:1em;
+       line-height : 1.5em;    
+       margin:0px;
+}
+
+#canvas {
+  width: 939px;
+  margin: 0 auto;
+}
+
+#header {
+  margin: 0 0 10px 0;
+}
+  /** the heading and tagline are h1 on homepage and h4 on internal */
+  #header h1,
+  #header h4 {
+    font-size: 30px;
+    margin: 0;
+    padding: 10px 0 10px 0;
+  }
+    /** the tagline is a span within the h1 or h4 */
+    #header h1 span,
+    #header h4 span { }
+
+  /**
+    Nav and Subnav
+    Split these out if you want the two levels to look different
+  */
+  #nav,
+  #subNav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #subNav {
+    margin-top: 10px;
+  }
+    #nav li,
+    #subNav li {
+      display: inline;
+      padding: 0 10px 0 0;
+    }
+    /* Currently selected page nav item (and parent) if applicable */
+    .current_page_item a,
+    .current_page_parent a {
+      text-decoration: none;
+    }
+      .current_page_item a:hover,
+      .current_page_parent a:hover {
+        text-decoration: underline;
+      }
+
+/**      main content     */
+#primaryContent {
+  width: 540px;
+  float: left;
+  padding: 0 20px 0 0;
+  margin: 0;
+}
+  #primaryContent h1 {
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+
+  #primaryContent h2 {
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+
+  /* titles are h2 on homepage and h1 for internal */
+  #primaryContent h1.postTitle,
+  #primaryContent h2.postTitle {
+    font-size: 22px;
+  }
+
+  #primaryContent h3 {
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+
+  ol#posts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+    li.postWrapper,
+    div.postWrapper { }
+
+      .postWrapper img { }
+
+      div.post { }
+
+      p.postMeta { }
+
+  #pagination {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+    #pagination li {
+      display: inlne;
+    }
+    #pagination .previous {
+      text-align: left;
+      float: left;
+    }
+    #pagination .future {
+      text-align: right;
+      float: right;
+    }
+
+/**       sidebar          */
+#secondaryContent {
+  width: 200px;
+  float: left;
+}
+  #secondaryContent h3 {
+    padding: 0;
+    margin: 10px 0 0 0;
+  }
+
+  /**
+    Remove bullets from the first level sidebar UL and give each item some bottom margin.
+    IE 6 doesn't like the selectors, I can live with that but if you can't then
+    you'll need to extend this further.
+  */
+  #secondaryContent > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+    #secondaryContent > ul > li {
+      margin: 0 0 10px 0;
+    }
+
+  /** the HTML is a bit dodgy for the tag cloud, need to add some padding
+      between the title and the first href */
+  .widget_tag_cloud a {
+    padding-left: 5px;
+  }
+
+#comment {
+  width: 500px;
+}
+
+/** normally hidden but will appear when css disabled */
+.skip,
+.noCss {
+  position: absolute;
+  left: -9999px;
+}
+
+/**
+  theme requirements as per 
+  http://codex.wordpress.org/CSS
+*/
+.aligncenter,
+div.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.alignleft {
+   float: left;
+}
+
+.alignright {
+   float: right;
+}
+
+/* custom CSS */
+.toplink {color:#666; text-decoration:none; font-size:1em;}
+.toplink:hover {text-decoration:underline;}
+
+#nav-section { 
+	width:100%; 
+	text-align:center; 
+	padding: 15px 0px;
+}
+
+#nav-section .nav-bar { 
+   width:833px;
+   height: 47px;
+   display: block;    
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#nav-section .active {
+	float:left;
+	background-image: url(images/structure/nav-active.jpg);
+}
+
+#nav-section .inactive {
+	float:left;
+	background-image: url(images/structure/nav-inactive.jpg);
+}
+
+#nav-section .inactive:hover {
+	background-image: url(images/structure/nav-active.jpg);
+}
+
+#nav-section .home {
+	width: 88px;
+	height: 47px;
+    background-position: 0 0;
+    display: inline-block;
+}
+
+#nav-section .debates {
+	width: 109px;
+	height: 47px;
+    background-position: -88px 0;
+    display: inline-block;
+}
+
+#nav-section .leaders {
+	width: 108px;
+	height: 47px;
+    background-position: -197px 0;
+    display: inline-block;
+}
+
+#nav-section .candidates {
+	width: 137px;
+	height: 47px;
+    background-position: -305px 0;
+    display: inline-block;
+}
+
+#nav-section .survey {
+	width: 101px;
+	height: 47px;
+    background-position: -442px 0;
+    display: inline-block;
+}
+
+#nav-section .contest {
+	width: 107px;
+	height: 47px;
+    background-position: -543px 0;
+    display: inline-block;
+}
+
+#nav-section .events {
+	width: 95px;
+	height: 47px;
+    background-position: -650px 0;
+    display: inline-block;
+}
+
+#nav-section .blog {
+	width: 88px;
+	height: 47px;
+    background-position: -745px 0;
+    display: inline-block;
+}
+
+/* Index Page */
+
+#hero-section {
+	margin:0px;
+	text-align:center; 
+}
+
+#hero-section .hero {
+	float: left;
+	position: relative;
+	left: -34px;
+	width:1008px; 
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+}
+
+#hero-section .left {
+	float: left;
+	width: 110px;
+	height: 285px;
+	background: url(images/structure/hero-left.jpg);
+	display: inline-block;
+}
+
+#hero-section .middle {
+	float: left;
+	margin:0px;
+	width: 768px;
+	padding: 21px 10px;
+	background: url(images/structure/hero-middle.jpg) repeat-x;
+	height: 243px;
+	display: inline-block;
+}
+
+#hero-section .right {
+	float: left;
+	width: 110px;
+	height: 285px;
+	background: url(images/structure/hero-right.jpg);
+	display: inline-block;
+}
+
+#debates .debate-header {
+	width: 464px;
+	height: 68px;
+	background: url(images/structure/home-debate.jpg);
+}
+
+#debates ol.debate-listing {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#debates .debate-listing li.debate-item {
+	margin: 0px;
+	background-image: url(images/structure/home-debate-item.jpg);
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	padding-top: 14px;
+	width: 434px;
+	height: 54px;
+}
+
+#debates .debate-listing li.debate-item h2 {
+	margin: 0px;
+	padding: 0px;
+}
+
+#debates .debate-listing li.debate-item h2 a {
+	text-decoration: none;
+	color: #555555;
+}
+
+#debates .debate-listing li.debate-item small {
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+	color: #a1a1a1;
+}
+
+#right-column {
+	position: relative;
+	float:right;
+	right:10px;
+	width: 420px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#left-column {
+	position: relative;
+	float:left;
+	left:10px;
+	margin: 0px;
+	padding: 0px;
+	width: 500px;
+}
+
+#footer {
+	clear: both;
+	padding-top: 40px;
+	line-height: 10px;
+}
+
+#footer hr {
+	border: none;
+	background-color: #ededed;
+	width: 100%;
+	height: 1px;
+}
+
+#footer ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#footer ul li {
+	margin: 0px;
+	display: inline-block;
+	font-weight: bold;
+	padding: 0px 6px 0px 2px;
+	border-right: #ccc 2px solid
+}
+
+#footer ul li a {
+	text-decoration: none;
+	color: #ccc;
+	font-size: 0.7em;
+}
+
+#footer .themark_footer {
+	position: relative;
+	float:right;
+	top: -35px;
+	background: url(images/structure/themark_footer.jpg) no-repeat;
+	width: 157px;
+	height: 74px;
+}
+
+#right-column {
+	position: relative;
+	top: -2px;
+}
+
+#right-column ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+#right-column ul li {
+	background: url(images/structure/home-widget-top.jpg);
+	margin: 0px;
+	width: 421px;
+}
+
+#right-column ul li .title {
+	padding: 30px 22px 0px;
+	color: #a5221a;
+	text-shadow: black 1px 1px 1px;
+	font-size: 2em;
+	font-family: 'Oswald', sans-serif;
+}
+
+#right-column ul li .text {
+	background-image: url(images/structure/home-widget-bottom.jpg);
+	background-repeat:no-repeat;
+	background-position: right bottom;
+	padding: 15px 200px 12px 22px;
+	width: 199px;
+	min-height: 45px;
+	color: #363636;
+	font-size: 0.9em;
+	font-weight: bold;
+	line-height: 1.3em;
+}
+
+#right-column ul li img {
+	position: relative;
+	float: right;
+	right: 11px;
+	width: 170px;
+}
+
