@@ -1,0 +1,90 @@
+Version 2.5.3.4
+-------------
+* Highly recommend this upgrade for everyone
+* Fixed sidebar widget thumbnails
+* Fixed video comment contribution wizard
+* Removed some legacy code
+
+Version 2.5.3.3
+-------------
+* The phantom add video box scrolling bug should be finally eradicated for EVERYone!
+* ALL video comments are now HTML5 (read: mobile) capable, if you so desire
+
+Version 2.5.3.2
+-------------
+* Fixed another bug with video library backend
+
+Version 2.5.3.1
+-------------
+* Fixed bug with video library backend - strongly recommend update
+
+Version 2.5.3
+-------------
+* Tons of bug fixes - everyone should update
+* More style improvements
+* Style easily changeable via jQuery UI Themeroller
+* Scroll gallery widget added!
+* HTML5 enabled with one click! View media on iPad, iPhone, other mobile devices! Requires mobile transcoded flavors.
+
+Version 2.5.2
+-------------
+* Tons of bug fixes - including admin dash JS fix!  Please update!
+* Overall style improved
+* Style easily changeable via jQuery UI Themeroller
+* Coming in next version: Gallery shortcode!
+
+Version 2.5.1
+-------------
+* Tons of bug fixes
+* Highly recommend this upgrade for all users
+
+Version 2.5.0
+-------------
+* Original All In One forked and merged with x7Host's Videox7 Plugin
+* Add Kaltura Contribution Wizard embedding shortcode
+* Add User Contributed Media shortcode
+* Add User Contributed Mixes shortcode
+* Add Make Playlist shortcode
+* Add View and Edit Playlists shortcode
+* Add XML-RPC publishing of media, mixes and playlists
+* Add view user contributed posts shortcode
+
+Version 2.4.2
+-------------
+* Removed link back to Kaltura for statistics gathering.
+
+Version 2.4
+-------------
+* MultiUser Support
+* New default players
+* Option to use custom KMC players within WordPress
+* Option to automatically generate video posts using categories from within the user’s KMC
+* Improved playback performance
+* Removed 200MB per upload restriction 
+
+Version 2.3.1
+-------------
+* Fixed PHP4 client throwing warnings when allow_call_time_pass_reference is off
+
+Version 2.3
+-------------
+* Added widescreen support
+* Changed video players designs
+* Bug fixing and maintenance
+
+Version 2.2
+-------------
+* Added option to update video thumbnail via the Library/Browse view
+* Updated registration form
+* Several bug fixes
+* Enhanced default video quality to 800kbs
+
+Version 2.1
+-------------
+* Added sidebar widget displaying thumbnails of recent videos and video comments
+* Fixed compatibility with WordPress 2.7 beta
+* Several bug fixes
+
+Version 2.0
+-------------
+* Initial release of All in One Video Pack, the newer version of Kaltura’s Interactive Video plugin.

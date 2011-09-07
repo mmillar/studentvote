@@ -1,0 +1,101 @@
+msgid "Bubblecast video"
+msgstr ""
+
+msgid "Sitemap will start building in a couple of seconds. This may take some time."
+msgstr ""
+
+msgid "Generate Video Sitemap"
+msgstr ""
+
+msgid "Login to bubblecast failed."
+msgstr ""
+
+msgid "Login successful"
+msgstr ""
+
+msgid "Bubblecast plugin for Wordpress brings users' video to your blog."
+msgstr ""
+
+msgid "Add video to the post when you're writing it"
+msgstr ""
+
+msgid "Add video to your comments"
+msgstr ""
+
+msgid "The tag <b>[bubblecast id=123]</b> is pasted from the widget"
+msgstr ""
+
+msgid "Type in your Bubblecast login and password below and log in."
+msgstr ""
+
+msgid "It should be done only once, after successful logon the plugin will remember the credentials."
+msgstr ""
+
+msgid "If you still don't have Bubblecast account, please,"
+msgstr ""
+
+msgid "register here"
+msgstr ""
+
+msgid "User name"
+msgstr ""
+
+msgid "Password"
+msgstr ""
+
+msgid "Language"
+msgstr ""
+
+msgid "English"
+msgstr ""
+
+msgid "Russian"
+msgstr ""
+
+msgid "Italian"
+msgstr ""
+
+msgid "Dutch"
+msgstr ""
+
+msgid "Get login here"
+msgstr ""
+
+msgid "Save and Login"
+msgstr ""
+
+msgid "You haven't set up Bubblecast login and password. Please, follow installation instructions to finish setup in your administration console at <b>Site Admin -&gt; Settings -&gt; Bubblecast</b>"
+msgstr ""
+
+msgid "Bubblecast plugin is not configured properly. Please, contact administrator."
+msgstr ""
+
+msgid "Close"
+msgstr ""
+
+msgid "Bubblecast Video Posts"
+msgstr ""
+
+msgid "Bubblecast Plugin Options"
+msgstr ""
+
+msgid "Title"
+msgstr ""
+
+msgid "Layout"
+msgstr ""
+
+msgid "Vertical"
+msgstr ""
+
+msgid "Horizontal"
+msgstr ""
+
+msgid "Videos"
+msgstr ""
+
+msgid "Categories"
+msgstr ""
+
+msgid "Add video comment"
+msgstr ""

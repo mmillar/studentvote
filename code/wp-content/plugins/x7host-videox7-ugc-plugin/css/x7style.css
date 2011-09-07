@@ -1,0 +1,222 @@
+#x7form { width: 600px; }
+.x7drafts { width:680px; }
+.tooltip {
+    display:none;
+    background:transparent url("../images/black_arrow_bottom.png");
+    font-size:12px;
+    height:70px;
+    width:160px;
+    padding:25px;
+    color:#fff;	
+}
+
+	.scroll-pane { overflow: auto; width: 99%; float:left; }
+	.scroll-content { width: 4440px; float: left; }
+	.scroll-content-item { width: 120px; height: 90px; float: left; margin: 10px; font-size: 3em; line-height: 96px; text-align: center; }
+	* html .scroll-content-item { display: inline; } /* IE6 float double margin bug */
+	.scroll-bar-wrap { clear: left; padding: 0 4px 0 2px; margin: 0 -1px -1px -1px; }
+	.scroll-bar-wrap .ui-slider { background: none; border:0; height: 2em; margin: 0 auto;  }
+	.scroll-bar-wrap .ui-handle-helper-parent { position: relative; width: 100%; height: 100%; margin: 0 auto; }
+	.scroll-bar-wrap .ui-slider-handle { top:.2em; height: 1.5em; }
+	.scroll-bar-wrap .ui-slider-handle .ui-icon { margin: -8px auto 0; position: relative; top: 50%; }
+
+#vidlist { list-style-type: none; margin: 0px; padding: 0px; }
+#playlist { height:110px; list-style-type: none; margin: 0px; padding: 0px; border: dashed; border-width: thin; }
+
+.x7placeholder {
+    height: 90px;
+    width: 120px;
+    background: transparent url("../images/x7placeholder.png");
+    }
+.connectedSortable>div { float: left; }
+
+textarea#listname { width: 160px; height: 20px; border: 3px solid #cccccc; padding: 5px; font-family: Tahoma, sans-serif; }
+
+#x7wrapdiv, #x7loading { display: none; }
+			#trash { list-style-type: none; margin: 0; padding: 0; width: 100px; }
+			#trash li { margin: 0 5px 5px 5px; padding: 5px; width: 90px; height: 60px; float: left; }
+			html>body #trash li { height: 91px; line-height: 1.2em; }
+			.ui-state-highlight { height: 1.5em; line-height: 1.2em; }   
+
+/*
+	root element for the scrollable.
+	when scrolling occurs this element stays still.
+*/
+.scrollable {
+
+	/* required settings */
+	position:relative;
+	overflow:hidden;
+	width: 505px;
+	height:90px;
+
+	/* custom decorations */
+	border:1px solid #ccc;
+	background:url(h300.png) repeat-x;
+}
+
+/*
+	root element for scrollable items. Must be absolutely positioned
+	and it should have a extremely large width to accomodate scrollable items.
+	it's enough that you set the width and height for the root element and
+	not for this element.
+*/
+.scrollable .items {
+	/* this cannot be too large */
+	width:20000em;
+	position:absolute;
+	clear:both;
+}
+
+.items div {
+	float:left;
+	width:680px;
+}
+
+/* remove margins from the image */
+	.items img {
+		margin:0;
+	}
+	
+	/* make A tags our floating scrollable items */
+	.items a {
+		display:block;
+		float:left;
+	} 
+
+/* single scrollable item */
+.scrollable img {
+	float:left;
+	margin:20px 5px 20px 21px;
+	background-color:#fff;
+	padding:2px;
+	border:1px solid #ccc;
+	width:100px;
+	height:75px;
+	
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+}
+
+/* active item */
+.scrollable .active {
+	border:2px solid #000;
+	position:relative;
+	cursor:default;
+}
+
+/* this makes it possible to add next button beside scrollable */
+.scrollable {
+	float:left;	
+}
+
+/* prev, next, prevPage and nextPage buttons */
+a.browse {
+	background:url(hori_large.png) no-repeat;
+	display:block;
+	width:30px;
+	height:30px;
+	float:left;
+	margin:40px 10px;
+	cursor:pointer;
+	font-size:1px;
+}
+
+/* right */
+a.right 				{ background-position: 0 -30px; clear:right; margin-right: 0px;}
+a.right:hover 		{ background-position:-30px -30px; }
+a.right:active 	{ background-position:-60px -30px; } 
+
+
+/* left */
+a.left				{ margin-left: 0px; } 
+a.left:hover  		{ background-position:-30px 0; }
+a.left:active  	{ background-position:-60px 0; }
+
+/* up and down */
+a.up, a.down		{ 
+	background:url(vert_large.png) no-repeat; 
+	float: none;
+	margin: 10px 50px;
+}
+
+/* up */
+a.up:hover  		{ background-position:-30px 0; }
+a.up:active  		{ background-position:-60px 0; }
+
+/* down */
+a.down 				{ background-position: 0 -30px; }
+a.down:hover  		{ background-position:-30px -30px; }
+a.down:active  	{ background-position:-60px -30px; } 
+
+
+/* disabled navigational button */
+a.disabled {
+	visibility:hidden !important;		
+}
+/*********************************************************************************************
+
+Video Gallery CSS  -----------  [x7video widget="videogallery"]
+
+*********************************************************************************************/
+#x7vidposts {
+width: 660px;
+float: left;
+padding: 25px 0 30px 0;
+}
+
+.x7gallery-item {
+width: 200px;
+float: left;
+margin: 0 10px 20px 0;
+border: solid 1px white;
+background-color: white;
+-moz-border-radius: 15px;
+border-radius: 15px;
+}
+
+.x7gallery-item-single {
+margin: 0;
+}
+
+.x7gallery-item h2 {
+border-bottom: 1px solid #E1E1E1;
+font-size: 32px;
+margin: 0 0 5px 0;
+padding: 0 0 5px 5px;
+}
+
+.x7post-thumbnail {
+width: 200px;
+height: 150px;
+float: left;
+margin: 0 0 10px 0;
+}
+
+.x7thumbnail-frame {
+background: url(images/frame.png) 0 0;
+width: 200px;
+height: 150px;
+position: absolute;
+}
+
+.x7thumbnail-frame:hover {
+background: url(images/frame.png) 0 -150px;
+width: 200px;
+height: 150px;
+position: absolute;
+}
+
+.x7thumbnail-frame-video {
+background: url(images/frame-video.png) 0 0;
+width: 200px;
+height: 150px;
+position: absolute;
+}
+
+.x7thumbnail-frame-video:hover {
+background: url(images/frame-video.png) 0 -150px;
+width: 200px;
+height: 150px;
+position: absolute;
+}

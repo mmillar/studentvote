@@ -1,0 +1,114 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: bubblecast-video-plugin\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: noname <noaddr>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Russian\n"
+
+msgid "Bubblecast video"
+msgstr "Видео Bubblecast"
+
+msgid "Sitemap will start building in a couple of seconds. This may take some time."
+msgstr "Генерация карты сайта начнётся через пару секунд. Это может занять какое-то время."
+
+msgid "Generate Video Sitemap"
+msgstr "Генерировать видео-sitemap"
+
+msgid "Login to bubblecast failed."
+msgstr "Не удалось зайти на bubblecast."
+
+msgid "Login successful"
+msgstr "Успешно зашли на bubblecast"
+
+msgid "Bubblecast plugin for Wordpress brings users' video to your blog."
+msgstr "Плагин bubblecast для Wordpress даёт возможность использовать видео в вашем блоге."
+
+msgid "Add video to the post when you're writing it"
+msgstr "Добавьте видео в пост прямо во время его написания"
+
+msgid "Add video to your comments"
+msgstr "Добавьте видео в свои комментарии"
+
+msgid "The tag <b>[bubblecast id=123]</b> is pasted from the widget"
+msgstr "Тег <b>[bubblecast id=123]</b> вставляется из виджета"
+
+msgid "Type in your Bubblecast login and password below and log in."
+msgstr "Введите свой логин к bubblecast и пароль и залогиньтесь."
+
+msgid "It should be done only once, after successful logon the plugin will remember the credentials."
+msgstr "Это нужно сделать лишь единожды, после успешного логина плагин запомнит имя и пароль."
+
+msgid "If you still don't have Bubblecast account, please,"
+msgstr "Если у вас всё ещё нет аккаунта на Bubblecast, пожалуйста,"
+
+msgid "register here"
+msgstr "зарегистрируйтесь здесь"
+
+msgid "User name"
+msgstr "Имя пользователя"
+
+msgid "Password"
+msgstr "Пароль"
+
+msgid "Language"
+msgstr "Язык"
+
+msgid "English"
+msgstr "Английский"
+
+msgid "Russian"
+msgstr "Русский"
+
+msgid "Italian"
+msgstr "Итальянский"
+
+msgid "Dutch"
+msgstr "Голландский"
+
+msgid "Get login here"
+msgstr "Получите логин/пароль здесь"
+
+msgid "Save and Login"
+msgstr "Сохранить и войти"
+
+msgid "You haven't set up Bubblecast login and password. Please, follow installation instructions to finish setup in your administration console at <b>Site Admin -&gt; Settings -&gt; Bubblecast</b>"
+msgstr "Вы не настроили имя пользователя и пароль для Bubblecast. Пожалуйста, следуйте инструкциям для завершения настройки в административной консоли своего блога в <b>Административная консоль -&gt; Настройки -&gt; Bubblecast</b>"
+
+msgid "Bubblecast plugin is not configured properly. Please, contact administrator."
+msgstr "Плагин Bubblecast не настроен правильным образом. Пожалуйста, свяжитесь с администратором."
+
+msgid "Close"
+msgstr "Закрыть"
+
+msgid "Bubblecast Video Posts"
+msgstr "Видео-посты Bubblecast"
+
+msgid "Bubblecast Plugin Options"
+msgstr "Настройки видео Bubblecast"
+
+msgid "Title"
+msgstr "Заголовок"
+
+msgid "Layout"
+msgstr "Размещение"
+
+msgid "Vertical"
+msgstr "Вертикальное"
+
+msgid "Horizontal"
+msgstr "Горизонтальное"
+
+msgid "Videos"
+msgstr "Видео-ролики"
+
+msgid "Categories"
+msgstr "Категории"
+
+msgid "Add video comment"
+msgstr "Добавить видео-комментарий"
+
