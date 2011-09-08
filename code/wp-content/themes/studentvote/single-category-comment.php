@@ -25,8 +25,8 @@ get_header();
 
 <?php the_content(__('(more...)')); ?>
 
-<div id="debate-next-button">
-	<a href="<?php echo(get_post_meta($post->ID, 'next-page', true)); ?>">Next Page</a>
+<div id="next-button" onclick="window.location='<?php echo(get_post_meta($post->ID, 'next-page', true)); ?>'">
+	> VOTE NOW!
 </div>
 <?php endwhile; ?>        
 <?php else: ?>

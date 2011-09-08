@@ -3,20 +3,17 @@
 Template Name: Leaders
 */
 get_header(); ?>
-  
-  <div id="hero-section">
-  	<div class="hero">
-	  	<div class="left"></div>
-  		<div class="middle"><?php the_post_thumbnail(); ?></div>
-	  	<div class="right"></div>
-  	</div>
+ <div id="page-header">
+  <div class="background">
+    <div class="title">
+      &middot; <?php the_title(); ?> &middot;
+    </div>
   </div>
-
-  
+</div>
 
   <div id="centered-column" style="clear:both;">
   <?php 
-    query_posts('cat=5');
+    query_posts('cat=12');
     
     if (have_posts()): ?>
     

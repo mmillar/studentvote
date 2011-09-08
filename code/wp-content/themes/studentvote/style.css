@@ -208,6 +208,7 @@ div.aligncenter {
    display: block;    
    margin-left: auto;
    margin-right: auto;
+  cursor: pointer;
 }
 
 #nav-section .active {
@@ -619,6 +620,7 @@ div.aligncenter {
   float: left;
   width: 420px;
   border-bottom: #ddd dotted 2px;
+  margin-bottom:20px;
 }
 
 #debate-arena-text .position-two {
@@ -626,6 +628,7 @@ div.aligncenter {
   float: right;
   width: 420px;
   border-bottom: #ddd dotted 2px;
+  margin-bottom:20px;
 }
 
 #debate-arena-text .position-one .title, #debate-arena-text .position-two .title {
@@ -639,8 +642,19 @@ div.aligncenter {
   border-bottom: #ddd dotted 2px;
 }
 
-#debate-next-button {
+#next-button {
+  margin-top: 20px;
+  background-image: url(images/structure/next-button.jpg);
+  width: 520px;
+  height: 50px;
   clear:both;
+  padding: 36px 20px 14px 0px;
+  font-size: 1.6em;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body {
@@ -711,4 +725,41 @@ body {
   width:100%;
   padding: 15px 0px;
   text-align: left;
+}
+
+#player {
+  text-align:center;
+  background-color: #ccc;
+  width:640px;
+  height:390px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#player .placeholder{
+  text-align:center;
+  background-color: #ccc;
+  width:640px;
+  height:390px;
+  font-size: 4em;
+  line-height: 390px;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
+}
+
+#the-answers {
+  margin-top: 20px;
+  background-image: url(images/structure/answers-backdrop.jpg);
+  width: 880px;
+  height: 340px;
+  padding: 30px;
+  text-align: left;
+}
+
+#the-answers .leader-answer{
+  text-align: center;
+  float: left;
+  width:220px;
+  height: 170px;
+  cursor: pointer;
 }

@@ -28,8 +28,8 @@ get_header();
     </div>
 </div>
 
-<div id="debate-next-button">
-	<a href="<?php echo(get_post_meta($post->ID, 'next-page', true)); ?>">Next Page</a>
+<div id="next-button" onclick="window.location='<?php echo(get_post_meta($post->ID, 'next-page', true)); ?>'">
+	> NOW, WATCH THE VIDEO DEBATE
 </div>
 <?php endwhile; ?>        
 <?php else: ?>

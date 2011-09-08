@@ -1,6 +1,6 @@
 <?php
 
-  get_header(); ?>
+  get_header(); query_posts('tag=featured');the_post(); ?>
   
   <div id="hero-section">
   	<div class="hero">
