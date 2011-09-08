@@ -31,7 +31,7 @@ body {
 }
 
 #header {
-  margin: 0 0 10px 0;
+  margin: 0 0 0px 0;
 }
   /** the heading and tagline are h1 on homepage and h4 on internal */
   #header h1,
@@ -467,3 +467,248 @@ div.aligncenter {
 	width: 170px;
 }
 
+#centered-column {
+  margin:0px;
+  text-align:center; 
+  width: 100%;
+}
+
+#the-issue {
+  background-image: url(images/structure/debate-page-holder.jpg);
+  background-repeat: no-repeat;
+  width: 640px;
+  height: 455px;
+  padding: 100px 110px 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#the-issue .the-issue-content {
+  text-align: left;
+  width: 640px;
+  height: 455px;
+  overflow-y: auto;
+  overflow-x: none;
+}
+
+#debate-section { 
+  clear: both;
+  width:100%; 
+  text-align:center; 
+  padding: 0px 0px 15px 0px;
+}
+
+#debate-section .nav-bar { 
+  width: 510px;
+  height: 60px;
+  display: block;    
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#debate-section .active {
+  float:left;
+  background-image: url(images/structure/debate-header.jpg);
+}
+
+#debate-section .inactive {
+  float:left;
+  background-image: url(images/structure/debate-header.jpg);
+}
+
+#debate-section .inactive:hover {
+  background-image: url(images/structure/debate-header.jpg);
+}
+
+#debate-section .the-issue {
+  width: 115px;
+  height: 60px;
+  background-position: 0 0;
+  display: inline-block;
+}
+
+#debate-section .question {
+  width: 95px;
+  height: 60px;
+  background-position: -115px 0;
+  display: inline-block;
+}
+
+#debate-section .debate {
+  width: 95px;
+  height: 60px;
+  background-position: -210px 0;
+  display: inline-block;
+}
+
+#debate-section .comment {
+  width: 95px;
+  height: 60px;
+  background-position: -305px 0;
+  display: inline-block;
+}
+
+#debate-section .vote {
+  width: 110px;
+  height: 60px;
+  background-position: -400px 0;
+  display: inline-block;
+}
+
+#page-header { 
+  width:100%; 
+  text-align:center; 
+  padding: 15px 0px;
+  height: 60px;
+}
+
+#page-header .background { 
+  position: relative;
+  float: left;
+  left: -40px;
+  width: 1020px;
+  height: 40px;
+  background-image: url(images/structure/page-header.jpg);
+  display: block;    
+  margin-left: auto;
+  margin-right: auto;
+  padding: 13px 0 7px;
+}
+
+#page-header .background .title{ 
+  color: #fff;
+  text-shadow: black 1px 1px 1px;
+  font-size: 2em;
+  font-family: 'Oswald', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#debate-arena-holder {
+  position: relative;
+  left: -10px;
+  float: left;
+  background-image: url(images/structure/debate-arena-holder.jpg);
+  width: 960px;
+  height: 480px;
+}
+
+#debate-arena-holder .position-one {
+  position: relative;
+  float: left;
+  left: 27px;
+  top: 160px;
+}
+
+#debate-arena-holder .position-two {
+  position: relative;
+  float: right;
+  right: 27px;
+  top: 160px;
+}
+
+#debate-arena-text {
+  clear: both;
+  width: 939px;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+#debate-arena-text .position-one {
+  position: relative;
+  float: left;
+  width: 420px;
+  border-bottom: #ddd dotted 2px;
+}
+
+#debate-arena-text .position-two {
+  position: relative;
+  float: right;
+  width: 420px;
+  border-bottom: #ddd dotted 2px;
+}
+
+#debate-arena-text .position-one .title, #debate-arena-text .position-two .title {
+  width: 380px;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.4em;
+  color: #a5221a;
+  font-family: 'Oswald', sans-serif;
+  border-top: #ddd dotted 2px;
+  border-bottom: #ddd dotted 2px;
+}
+
+#debate-next-button {
+  clear:both;
+}
+
+body {
+  font: 0.8em/21px arial,sans-serif;
+}
+
+.checkbox, .radio {
+  width: 19px;
+  height: 25px;
+  background: url(images/structure/checkbox.png) no-repeat;
+  display: block;
+  clear: left;
+}
+.radio {
+  background: url(images/structure/radio.png) no-repeat;
+}
+.select {
+  position: absolute;
+  width: 158px; /* With the padding included, the width is 190 pixels: the actual width of the image. */
+  height: 21px;
+  padding: 0 24px 0 8px;
+  color: #fff;
+  font: 12px/21px arial,sans-serif;
+  background: url(select.gif) no-repeat;
+  overflow: hidden;
+}
+
+.wp-polls {
+  clear: both;  
+  height: 150px;
+}
+
+.wp-polls p {
+  display: none;
+}
+
+.wp-polls-ans ul {
+  float: left;
+  width: 1040px;
+}
+
+.wp-polls-ans ul li {
+  width: 400px;
+  float: left;
+  padding-right: 120px;
+}
+
+.wp-polls-ans ul li label {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 1.4em;
+  color: #a5221a;
+  font-family: 'Oswald', sans-serif;
+}
+
+.wp-polls-ans ul li .radio {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wp-polls .vote-button {
+  display: block;
+}
+
+.intro-text {
+  clear: both;
+  width:100%;
+  padding: 15px 0px;
+  text-align: left;
+}

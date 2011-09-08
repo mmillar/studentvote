@@ -22,6 +22,16 @@ function register_custom_menu() {
   register_nav_menu('footer_menu', __('Footer Menu'));
 }
 
+add_filter('single_template', 'sv_single_template');
+
+function sv_single_template(){
+  foreach( (array) get_the_category() as $cat ) { 
+    if ( file_exists(TEMPLATEPATH . "/single-category-{$cat->slug}.php") ) 
+      return TEMPLATEPATH . "/single-category-{$cat->slug}.php"; 
+  }
+  return TEMPLATEPATH . "/single.php"; 
+}
+
 /**
 * naked_nav()
 *

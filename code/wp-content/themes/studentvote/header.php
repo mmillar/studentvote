@@ -19,6 +19,7 @@
 	<?php
     wp_get_archives('type=monthly&format=link');
     wp_enqueue_script("jquery");
+    wp_enqueue_script('custom-form-elements', get_bloginfo('stylesheet_directory') . '/js/custom-form-elements.js', array('jquery'), '20091014' );
     wp_head();
   ?>
     <script type="text/javascript" src="<?php bloginfo("template_url"); ?>/js/jquery-1.6.2.min.js"></script>
@@ -57,14 +58,14 @@
       </div>
     <div id="nav-section">
 	    <div class="nav-bar">
-			<div class="inactive home" onclick="window.location='http://localhost/home'"></div>
-			<div class="inactive debates" onclick="window.location='http://localhost/home'"></div>
-			<div class="inactive leaders" onclick="window.location='http://localhost/home'"></div>
-			<div class="inactive candidates" onclick="window.location='http://localhost/home'"></div>
-			<div class="inactive survey" onclick="window.location='http://localhost/home'"></div>
-			<div class="inactive contest" onclick="window.location='http://localhost/home'"></div>
-			<div class="inactive events" onclick="window.location='http://localhost/home'"></div>
-			<div class="inactive blog" onclick="window.location='http://localhost/home'"></div>
+			<div class="<?php echo((is_home())?"":"in") ?>active home" onclick="window.location='<?php bloginfo('url'); ?>'"></div>
+			<div class="<?php echo((is_page('Debates')||strpos($_SERVER['REQUEST_URI'],"/debates/"))?"":"in") ?>active debates" onclick="window.location='<?php bloginfo('url'); ?>/debates'"></div>
+			<div class="<?php echo((is_page('Leaders')||strpos($_SERVER['REQUEST_URI'],"/leader/"))?"":"in") ?>active leaders" onclick="window.location='<?php bloginfo('url'); ?>/leaders'"></div>
+			<div class="<?php echo((is_page('Candidates'))?"":"in") ?>active candidates" onclick="window.location='<?php bloginfo('url'); ?>/candidates'"></div>
+			<div class="<?php echo((is_page('Survey')||strpos($_SERVER['REQUEST_URI'],"/survey/"))?"":"in") ?>active survey" onclick="window.location='<?php bloginfo('url'); ?>/survey'"></div>
+			<div class="<?php echo((is_page('Contest')||strpos($_SERVER['REQUEST_URI'],"/contest/"))?"":"in") ?>active contest" onclick="window.location='<?php bloginfo('url'); ?>/contest'"></div>
+			<div class="<?php echo((is_page('Events')||strpos($_SERVER['REQUEST_URI'],"/event/"))?"":"in") ?>active events" onclick="window.location='<?php bloginfo('url'); ?>/events'"></div>
+			<div class="<?php echo((is_page('Blog'))?"":"in") ?>active blog" onclick="window.location='<?php bloginfo('url'); ?>/blog'"></div>
 		</div>
 	</div>
     </div>

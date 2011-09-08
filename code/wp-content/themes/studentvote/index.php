@@ -14,7 +14,7 @@
 
   <div id="left-column" style="clear:both;">
 <?php 
-  query_posts('cat=4');
+  query_posts('cat=6');
   
   if (have_posts()): ?>
   

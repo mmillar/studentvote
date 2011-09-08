@@ -1,0 +1,133 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Link To Post\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-11-25 00:28+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Julien Appert <appertj@gmail.com>\n"
+"Language-Team: ajcrea <jappert@ajcrea.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\wordpress\\wp-content\\plugins\\link-to-post\n"
+"Plural-Forms: nplurals=2;plural=n>2\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: C:\\UwAmp\\www\\wordpress\\wp-content\\plugins\\link-to-post\n"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:80
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:92
+msgid "Link a post"
+msgstr "Link a post"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:84
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:93
+msgid "Link a page"
+msgstr "Link a page"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:125
+msgid "Options of \"Link to post\""
+msgstr "Options of \"Link to post\""
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:127
+msgid "Configuration"
+msgstr "Configuration"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:131
+msgid "Search with selected text"
+msgstr "Search with selected text"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:135
+msgid "Add the nofollow attribute"
+msgstr "Add the nofollow attribute"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:139
+msgid "Use the shortcode"
+msgstr "Use the shortcode"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:139
+msgid "(use with caution : if you disable the plugin, shortcode won't generate links anymore)"
+msgstr "(use with caution : if you disable the plugin, shortcode won't generate links anymore)"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:142
+msgid "Save changes"
+msgstr "Save changes"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:21
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:23
+msgid "Show filter"
+msgstr "Show the filter"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:23
+msgid "Filter pages"
+msgstr "Filter pages"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:26
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:28
+msgid "Content"
+msgstr "Content:"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:29
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:31
+msgid "in title"
+msgstr "in title"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:30
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:32
+msgid "in content"
+msgstr "in content"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:31
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:33
+msgid "in both"
+msgstr "in both"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:35
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:43
+msgid "search"
+msgstr "Search"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:36
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:44
+msgid "Cancel"
+msgstr "Cancel"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:37
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:45
+msgid "Hide filter"
+msgstr "Hide the filter"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:55
+msgid "page"
+msgstr "page"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:58
+msgid "pages"
+msgstr "pages"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:172
+msgid "No page"
+msgstr "No page"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:25
+msgid "Filter posts"
+msgstr "Filter posts"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:39
+msgid "all categories"
+msgstr "all categories"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:63
+msgid "post"
+msgstr "post"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:66
+msgid "posts"
+msgstr "posts"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:188
+msgid "No post"
+msgstr "No post"
+

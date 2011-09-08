@@ -1,0 +1,132 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Link To Post\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-11-25 00:28+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Ksaveras Šakys <xawiers@gmail.com>\n"
+"Language-Team: Xawiers <xawiers@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Lithuanian\n"
+"X-Poedit-Country: LITHUANIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\wordpress\\wp-content\\plugins\\link-to-post\n"
+"Plural-Forms: nplurals=2;plural=n>2\n"
+"X-Poedit-KeywordsList: _e;__\n"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:80
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:92
+msgid "Link a post"
+msgstr "Įrašo nuoroda"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:84
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:93
+msgid "Link a page"
+msgstr "Puslapio nuoroda"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:125
+msgid "Options of \"Link to post\""
+msgstr "\"Link to post\" nustatymai"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:127
+msgid "Configuration"
+msgstr "Nustatymai"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:131
+msgid "Search with selected text"
+msgstr "Ieškoti pažymėtame tekste"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:135
+msgid "Add the nofollow attribute"
+msgstr "Pridėti \"nofollow\" atributą"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:139
+msgid "Use the shortcode"
+msgstr "Naudoti trumpą kodą"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:139
+msgid "(use with caution : if you disable the plugin, shortcode won't generate links anymore)"
+msgstr "(dėmesio: jei Jūs išjungsite įskeipį, strumpasis kodas negeneruos nuorodų)"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:142
+msgid "Save changes"
+msgstr "Išsaugoti pakeitimus"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:21
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:23
+msgid "Show filter"
+msgstr "Rodyti filtrą"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:23
+msgid "Filter pages"
+msgstr "Filtruoti puslapius"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:26
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:28
+msgid "Content"
+msgstr "Ieškoti"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:29
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:31
+msgid "in title"
+msgstr "pavadinime"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:30
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:32
+msgid "in content"
+msgstr "turinyje"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:31
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:33
+msgid "in both"
+msgstr "abiejuose"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:35
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:43
+msgid "search"
+msgstr "Rasti"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:36
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:44
+msgid "Cancel"
+msgstr "Atšaukti"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:37
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:45
+msgid "Hide filter"
+msgstr "Slėpti filtrą"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:55
+msgid "page"
+msgstr "puslapis"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:58
+msgid "pages"
+msgstr "puslapiai"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:172
+msgid "No page"
+msgstr "Puslapio nėra"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:25
+msgid "Filter posts"
+msgstr "Filtruoti įrašus"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:39
+msgid "all categories"
+msgstr "visos kategorijos"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:63
+msgid "post"
+msgstr "įrašas"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:66
+msgid "posts"
+msgstr "įrašai"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:188
+msgid "No post"
+msgstr "Įrašo nėra"
+

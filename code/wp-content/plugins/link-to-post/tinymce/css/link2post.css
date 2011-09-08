@@ -1,0 +1,37 @@
+div.wrapper_quicktag{	padding:5px;}
+div.wrapper_quicktag fieldset{ border:1px solid #DFDFDF; float:none;}
+div.wrapper_quicktag legend{ color:#2B6FCF;}
+div.wrapper_quicktag ul#liens{ list-style-type:disc; padding-left:40px;}
+div.wrapper_quicktag ul#liens li{ line-height:0.8em;}
+
+#fc p{
+	text-align:left;
+	overflow:hidden;
+}
+#fc label{
+	float:left;
+	display:block;
+	width:100px;
+	text-align:right;
+	padding-right:20px;
+}
+#fc #validate{ text-align:center;}
+.showFilter{display:none;margin:0;}
+ul#liens li{ padding:2px 0;}
+.results{ padding-right:20px; font-weight:bold;}
+.panel{ height:auto!important;  }
+
+/* Tabs classes */
+.tabs {width:100%; height:18px; line-height:normal; background:url(img/tabs.gif) repeat-x 0 -72px;}
+.tabs ul {margin:0; padding:0; list-style:none;}
+.tabs li {float:left; background:url(img/tabs.gif) no-repeat 0 0; margin:0 2px 0 0; padding:0 0 0 10px; line-height:17px; height:18px; display:block;}
+.tabs li.current {background:url(img/tabs.gif) no-repeat 0 -18px; margin-right:2px;}
+.tabs span {float:left; display:block; background:url(img/tabs.gif) no-repeat right -36px; padding:0px 10px 0 0;}
+.tabs .current span {background:url(img/tabs.gif) no-repeat right -54px;}
+.tabs a {text-decoration:none; font-family:Verdana, Arial; font-size:10px;}
+.tabs a:link, .tabs a:visited, .tabs a:hover {color:black;}
+
+/* Panels */
+.panel_wrapper div.panel {display:none;}
+.panel_wrapper div.current {display:block; width:100%; overflow:visible;}
+.panel_wrapper {border:1px solid #919B9C; border-top:0px; padding:10px; padding-top:5px; clear:both; background:white;}

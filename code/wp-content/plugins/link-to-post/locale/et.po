@@ -1,0 +1,133 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Link To Post\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-11-25 00:28+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: illimar <illimar@divid.ee>\n"
+"Language-Team: ajcrea <jappert@ajcrea.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: C:\\wamp\\www\\wordpress\\wp-content\\plugins\\link-to-post\n"
+"Plural-Forms: nplurals=2;plural=n>2\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-SearchPath-0: C:\\UwAmp\\www\\wordpress\\wp-content\\plugins\\link-to-post\n"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:80
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:92
+msgid "Link a post"
+msgstr "Lingi postitusele"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:84
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:93
+msgid "Link a page"
+msgstr "Lingi lehele"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:125
+msgid "Options of \"Link to post\""
+msgstr "\"Link to post\" valikud"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:127
+msgid "Configuration"
+msgstr "Seaded"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:131
+msgid "Search with selected text"
+msgstr "Otsi selekteeritud (valitud) tekstiga"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:135
+msgid "Add the nofollow attribute"
+msgstr "Lisa nofollow atribuut"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:139
+msgid "Use the shortcode"
+msgstr "Kasuta lühikoodi (shortcode)"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:139
+msgid "(use with caution : if you disable the plugin, shortcode won't generate links anymore)"
+msgstr "(kasuta ettevaatlikult : kui sa lülitad plugina välja, ei genereeri lühikood (shortcode) enam linke)"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/link-to-post.php:142
+msgid "Save changes"
+msgstr "Salvesta muutused"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:21
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:23
+msgid "Show filter"
+msgstr "Näita filtrit"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:23
+msgid "Filter pages"
+msgstr "Filtreeri lehed"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:26
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:28
+msgid "Content"
+msgstr "Sisu:"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:29
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:31
+msgid "in title"
+msgstr "pealkirjas"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:30
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:32
+msgid "in content"
+msgstr "sisus"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:31
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:33
+msgid "in both"
+msgstr "mõlemas"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:35
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:43
+msgid "search"
+msgstr "Otsi"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:36
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:44
+msgid "Cancel"
+msgstr "Tühista"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:37
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:45
+msgid "Hide filter"
+msgstr "Peida filter"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:55
+msgid "page"
+msgstr "leht"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:58
+msgid "pages"
+msgstr "lehte"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/pages.php:172
+msgid "No page"
+msgstr "Lehti ei ole"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:25
+msgid "Filter posts"
+msgstr "Filtreeri postitused"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:39
+msgid "all categories"
+msgstr "kõik kategooriad"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:63
+msgid "post"
+msgstr "postitus"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:66
+msgid "posts"
+msgstr "postitust"
+
+#: C:\UwAmp\www\wordpress\wp-content\plugins\link-to-post/posts.php:188
+msgid "No post"
+msgstr "Postitusi ei ole"
+
