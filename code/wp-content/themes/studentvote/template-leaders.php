@@ -22,9 +22,9 @@ get_header(); ?>
     	
     	    while (have_posts()) : the_post(); ?>
     	
-    	    <li class="leader-item" id="post-<?php the_ID(); ?>">
+    	    <li class="leader-item" id="post-<?php the_ID(); ?>" onclick="window.location='<?php the_permalink() ?>';">
     	
-    	      <h2 class="postTitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+    	      <h2 class="postTitle"><?php the_title(); ?></h2>
     	
     	    </li>
     	

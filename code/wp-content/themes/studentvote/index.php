@@ -5,7 +5,7 @@
   <div id="hero-section">
   	<div class="hero">
 	  	<div class="left"></div>
-  		<div class="middle"><?php the_post_thumbnail(); ?></div>
+  		<div class="middle" onclick="window.location='<?php the_permalink() ?>';"><?php the_post_thumbnail(); ?></div>
 	  	<div class="right"></div>
   	</div>
   </div>
@@ -25,9 +25,9 @@
 	
 	    while (have_posts()) : the_post(); ?>
 	
-	    <li class="debate-item" id="post-<?php the_ID(); ?>">
+	    <li class="debate-item" id="post-<?php the_ID(); ?>" onclick="window.location='<?php the_permalink() ?>';">
 	
-	      <h2 class="postTitle"><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+	      <h2 class="postTitle"><?php the_title(); ?></h2>
 	      <small><?php the_date(); ?></small>
 	
 	    </li>

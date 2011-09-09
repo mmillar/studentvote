@@ -1,0 +1,159 @@
+#movielinks {
+float : left; 
+background-color : transparent;
+width : 280px; 
+padding : 0; 
+margin : 0;
+font-size : .9em;
+}
+
+#movielinks ul, #movielinks h1 {
+text-align : left; 
+padding-left : 0; 
+margin-left : 0; 
+list-style-type : none;
+}
+
+#movielinks ul {
+margin-bottom : 3em;
+}
+
+h1 {
+font-size : 1.7em;
+}
+
+#movielinks li {
+text-indent : 0px;
+font-weight : bold;
+}
+
+
+#movielinks li A:link, #movielinks li A:visited {
+background-color : #fff;
+text-decoration : none;
+color : #271c16;
+display : block;
+margin-top : 1em;
+padding : 4px;
+}
+
+
+#movielinks li A:hover, #movielinks li A:focus, #movielinks li A:active {
+color : #fff;
+background-color : #271c16;
+text-decoration : none;
+display : block;
+margin-top : 1em;
+padding : 4px;
+}
+
+
+
+#movielinks A:link, #movielinks A:visited {
+background-color : #fff;
+text-decoration : underline;
+color : #700000;
+padding : 0;
+}
+
+
+#movielinks A:hover, #movielinks A:focus, #movielinks A:active {
+color : #fff;
+background-color : #700000;
+text-decoration : none;
+padding : 0;
+}
+
+
+#videolist {
+}
+
+#videolist ul {
+list-style-type : none;
+margin : 0;
+padding : 0;
+}
+
+#videolist li {
+margin-top : .75em;
+}
+
+
+
+#playercontainer {
+width : 425px;
+float : left; 
+padding-right : 20px;
+}
+
+#ytapiplayer p{
+font-size : 1.7em;
+color : red;
+}
+
+#myytplayer {
+width : 425px;
+}
+
+#controls {
+clear : both;
+width : 426px;
+padding : 0;
+padding-bottom : 40px;
+margin : 0;
+line-height : 1em;
+text-align : right;
+font-size : .95em;
+font-family : arial, sans-serif;
+text-transform : lowercase;
+color : #f8f0e8;
+}
+
+#controls h2 {
+position : absolute;
+top : -1000px;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+
+form {
+margin-top : -.7em;
+margin-right : -.5em;
+}
+
+fieldset {
+border : none;
+}
+
+
+input {
+color : #fff;
+background-color : #700000;
+border : solid 1px #fff;
+margin-left : 0;
+margin-right : -.3em;
+padding : 0;
+padding-left : 7px;
+padding-right : 7px;
+}
+
+input:hover, input:focus, input:active {
+color : #700000;
+background-color : #fff;
+border : solid 1px #700000;
+margin-left : 0;
+margin-right : -.3em;
+padding : 0;
+padding-left : 7px;
+padding-right : 7px;
+}
+
+#videolength, #videotime, #volume, #videopercent {
+font-size : .9em;
+color : #700000;
+}
+
+#playerstate {
+color : #700000;
+}

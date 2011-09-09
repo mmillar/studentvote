@@ -314,6 +314,7 @@ div.aligncenter {
 	background: url(images/structure/hero-middle.jpg) repeat-x;
 	height: 243px;
 	display: inline-block;
+  cursor: pointer;
 }
 
 #hero-section .right {
@@ -322,6 +323,12 @@ div.aligncenter {
 	height: 285px;
 	background: url(images/structure/hero-right.jpg);
 	display: inline-block;
+}
+
+#debates {
+  margin-right: auto;
+  margin-left: auto;
+  width:680px;
 }
 
 #debates .debate-header {
@@ -344,19 +351,31 @@ div.aligncenter {
 	padding-top: 14px;
 	width: 434px;
 	height: 54px;
+  cursor: pointer;
+  color: #555555;
 }
 
-#debates .debate-listing li.debate-item h2 {
+#debates .debate-listing li.debate-item-long {
+  margin: 0px;
+  background-image: url(images/structure/leaders-item.jpg);
+  background-repeat: no-repeat;
+  padding-top: 14px;
+  width: 680px;
+  height: 44px;
+  cursor: pointer;
+  color: #555555;
+}
+
+#debates .debate-listing li.debate-item:hover, #debates .debate-listing li.debate-item-long:hover {
+  text-decoration: underline;
+}
+
+#debates .debate-listing li.debate-item h2, #debates .debate-listing li.debate-item-long h2 {
 	margin: 0px;
 	padding: 0px;
 }
 
-#debates .debate-listing li.debate-item h2 a {
-	text-decoration: none;
-	color: #555555;
-}
-
-#debates .debate-listing li.debate-item small {
+#debates .debate-listing li.debate-item small, #debates .debate-listing li.debate-item-long small {
 	margin: 0px;
 	padding: 0px;
 	font-weight: bold;
@@ -434,13 +453,14 @@ div.aligncenter {
 	margin: 0px;
 }
 
-#right-column ul li {
+#right-column ul li.widget_svwidget {
 	background: url(images/structure/home-widget-top.jpg);
 	margin: 0px;
 	width: 421px;
+  cursor: pointer;
 }
 
-#right-column ul li .title {
+#right-column ul li.widget_svwidget .title {
 	padding: 30px 22px 0px;
 	color: #a5221a;
 	text-shadow: black 1px 1px 1px;
@@ -448,7 +468,7 @@ div.aligncenter {
 	font-family: 'Oswald', sans-serif;
 }
 
-#right-column ul li .text {
+#right-column ul li.widget_svwidget .text {
 	background-image: url(images/structure/home-widget-bottom.jpg);
 	background-repeat:no-repeat;
 	background-position: right bottom;
@@ -461,7 +481,7 @@ div.aligncenter {
 	line-height: 1.3em;
 }
 
-#right-column ul li img {
+#right-column ul li.widget_svwidget img {
 	position: relative;
 	float: right;
 	right: 11px;
@@ -645,6 +665,7 @@ div.aligncenter {
 #next-button {
   margin-top: 20px;
   background-image: url(images/structure/next-button.jpg);
+  background-color: #a5221a;
   width: 520px;
   height: 50px;
   clear:both;
@@ -682,27 +703,27 @@ body {
   overflow: hidden;
 }
 
-.wp-polls {
+#centered-column .wp-polls {
   clear: both;  
   height: 150px;
 }
 
-.wp-polls p {
+#centered-column .wp-polls p {
   display: none;
 }
 
-.wp-polls-ans ul {
+#centered-column .wp-polls-ans ul {
   float: left;
   width: 1040px;
 }
 
-.wp-polls-ans ul li {
+#centered-column .wp-polls-ans ul li {
   width: 400px;
   float: left;
   padding-right: 120px;
 }
 
-.wp-polls-ans ul li label {
+#centered-column .wp-polls-ans ul li label {
   width: 100%;
   display: block;
   text-align: center;
@@ -711,12 +732,12 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
-.wp-polls-ans ul li .radio {
+#centered-column .wp-polls-ans ul li .radio {
   margin-left: auto;
   margin-right: auto;
 }
 
-.wp-polls .vote-button {
+#centered-column .wp-polls .vote-button {
   display: block;
 }
 
@@ -762,4 +783,140 @@ body {
   width:220px;
   height: 170px;
   cursor: pointer;
+}
+
+#leaders {
+  width: 680px;
+  margin: 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#leaders ol.leader-listing {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+#leaders .leader-listing li.leader-item {
+  margin: 0px;
+  background-image: url(images/structure/leaders-item.jpg);
+  background-repeat: no-repeat;
+  padding-top: 20px;
+  width: 680px;
+  height: 38px;
+  cursor: pointer;
+  color: #555555;
+}
+
+#leaders .leader-listing li.leader-item:hover {
+  text-decoration: underline;
+}
+
+#leaders .leader-listing li.leader-item h2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+#blogs {
+  text-align: left;
+}
+
+#centered-column .wp-polls {
+  clear: both;  
+  height: 150px;
+}
+
+#centered-column .wp-polls p {
+  display: none;
+}
+
+#centered-column .wp-polls-ans ul {
+  float: left;
+  width: 1040px;
+}
+
+#centered-column .wp-polls-ans ul li {
+  width: 400px;
+  float: left;
+  padding-right: 120px;
+}
+
+#centered-column .wp-polls-ans ul li label {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 1.4em;
+  color: #a5221a;
+  font-family: 'Oswald', sans-serif;
+}
+
+#centered-column .wp-polls-ans ul li .radio {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#centered-column .wp-polls .vote-button {
+  display: block;
+}
+
+#right-column ul li.widget_polls-widget {
+  background: url(images/structure/home-polls-widget.jpg);
+  margin: 0px;
+  width: 377px;
+  height: 136px;
+  padding: 30px 22px 0px;
+  color: #a5221a;
+  text-shadow: black 1px 1px 1px;
+  font-size: 2em;
+  font-family: 'Oswald', sans-serif;
+}
+
+#right-column ul li.widget_polls-widget .wp-polls {
+  font-family: Arial;
+  font-size: 0.8em;
+  color: black;
+}
+
+#right-column ul li.widget_polls-widget .wp-polls strong {
+  float: left;
+  width: 180px;
+}
+
+#right-column ul li.widget_polls-widget .wp-polls-ans {
+  position: relative;
+  top: -45px;
+  float: right;
+  width: 185px;
+  height: 0px;
+  overflow: visible;
+  padding-left: 10px;
+  border-left: #fff 1px solid;
+}
+
+#right-column ul li.widget_polls-widget .wp-polls-ans label {
+  position: relative;
+  width: 165px;
+  float: right;
+  text-align: left;
+}
+
+#right-column ul li.widget_polls-widget .text {
+  background-image: url(images/structure/home-polls-widget.jpg);
+  background-repeat:no-repeat;
+  background-position: right bottom;
+  padding: 15px 200px 12px 22px;
+  width: 199px;
+  min-height: 45px;
+  color: #363636;
+  font-size: 0.9em;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+
+#right-column ul li.widget_polls-widget img {
+  position: relative;
+  float: right;
+  right: 11px;
+  width: 170px;
 }

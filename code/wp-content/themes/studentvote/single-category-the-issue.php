@@ -29,7 +29,7 @@ get_header();
 </div>
 
 <div id="next-button" onclick="window.location='<?php echo(get_post_meta($post->ID, 'next-page', true)); ?>'">
-	> NOW, WATCH THE VIDEO DEBATE
+	> SEE THE QUESTION
 </div>
 <?php endwhile; ?>        
 <?php else: ?>

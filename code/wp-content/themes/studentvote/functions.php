@@ -144,11 +144,14 @@ class SVWidget extends WP_Widget {
 		extract( $args );
 		$title = apply_filters( 'widget_title', $instance['title'] );
 		$text = apply_filters( 'widget_text', $instance['text'] );
-		$img = apply_filters( 'widget_img', $instance['img'] );
+    $img = apply_filters( 'widget_img', $instance['img'] );
+    $url = apply_filters( 'widget_url', $instance['url'] );
 		echo $before_widget; ?>
+    <div onclick="window.location='<?php echo $url; ?>'";>
 		<img src="<?php echo $img; ?>">
 		<div class="title"><?php echo $title; ?></div>
 		<div class="text"><?php echo $text; ?></div>
+    </div>
 		<?php echo $after_widget;
 	}
 
@@ -157,7 +160,8 @@ class SVWidget extends WP_Widget {
 		$instance = $old_instance;
 		$instance['title'] = strip_tags($new_instance['title']);
 		$instance['text'] = $new_instance['text'];
-		$instance['img'] = $new_instance['img'];
+    $instance['img'] = $new_instance['img'];
+    $instance['url'] = $new_instance['url'];
 		return $instance;
 	}
 
@@ -166,7 +170,8 @@ class SVWidget extends WP_Widget {
 		if ( $instance ) {
 			$title = esc_attr( $instance[ 'title' ] );
 			$text = $instance[ 'text' ];
-			$image = $instance[ 'img' ];
+      $image = $instance[ 'img' ];
+      $url = $instance[ 'url' ];
 		}
 		?>
 		<p>
@@ -177,10 +182,14 @@ class SVWidget extends WP_Widget {
 		<label for="<?php echo $this->get_field_id('text'); ?>"><?php _e('Text:'); ?></label> 
 		<textarea class="widefat" id="<?php echo $this->get_field_id('text'); ?>" name="<?php echo $this->get_field_name('text'); ?>"><?php echo $text; ?></textarea>
 		</p>
-		<p>
-		<label for="<?php echo $this->get_field_id('image'); ?>"><?php _e('Image:'); ?></label> 
-		<input class="widefat" id="<?php echo $this->get_field_id('image'); ?>" name="<?php echo $this->get_field_name('img'); ?>" type="text" value="<?php echo $image; ?>" />
-		</p>
+    <p>
+    <label for="<?php echo $this->get_field_id('image'); ?>"><?php _e('Image:'); ?></label> 
+    <input class="widefat" id="<?php echo $this->get_field_id('image'); ?>" name="<?php echo $this->get_field_name('img'); ?>" type="text" value="<?php echo $image; ?>" />
+    </p>
+    <p>
+    <label for="<?php echo $this->get_field_id('url'); ?>"><?php _e('Url:'); ?></label> 
+    <input class="widefat" id="<?php echo $this->get_field_id('url'); ?>" name="<?php echo $this->get_field_name('url'); ?>" type="text" value="<?php echo $url; ?>" />
+    </p>
 		<?php 
 	}
 

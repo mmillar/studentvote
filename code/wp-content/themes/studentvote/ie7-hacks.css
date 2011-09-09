@@ -1,0 +1,13 @@
+
+
+input {
+margin-right : 0;
+}
+
+#play, #mute {
+margin-right : -3px;
+}
+
+#controls {
+width : 500px;
+}
