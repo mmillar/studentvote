@@ -80,7 +80,7 @@ $(function(){
 	  if($("#author").val()=="Name") $("#author").val("");
 	});
 	$("#email").focus(function() {
-	  if($("#email").val()=="E-mail") $("#author").val("");
+	  if($("#email").val()=="E-mail") $("#email").val("");
 	});
 	$("#url").focus(function() {
 	  if($("#url").val()=="Website") $("#url").val("");
