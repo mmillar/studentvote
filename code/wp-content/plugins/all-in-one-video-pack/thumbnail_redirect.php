@@ -15,11 +15,11 @@
 	$thumbnailPath .= "/sp/" . get_option('kaltura_subp_id');
 	$thumbnailPath .= "/thumbnail";
 	$thumbnailPath .= "/width/" . $width;
-	$thumbnailPath .= "/height/" . $height;
-	$thumbnailPath .= "/widget_id/" . $widgetId;
-	$thumbnailPath .= "/type/2";
-	$thumbnailPath .= "/bgcolor/000000";
-	$thumbnailPath .= "/crop_provider/wordpress_placeholder";
+	// $thumbnailPath .= "/height/" . $height;
+	// $thumbnailPath .= "/widget_id/" . $widgetId;
+	// $thumbnailPath .= "/type/2";
+	// $thumbnailPath .= "/bgcolor/000000";
+	// $thumbnailPath .= "/crop_provider/wordpress_placeholder";
 	header("Location: " . KalturaHelpers::getServerUrl() . $thumbnailPath);
 	
 	ob_end_flush();

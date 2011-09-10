@@ -456,7 +456,7 @@ function kaltura_shortcode($attrs)
 
 		$embedOptions["flashVars"] .= "&autoPlay=true";
 		$html = '
-				<div id="' . $thumbnailDivId . '" style="width:'.$width.'px;height:'.$height.'px;" class="kalturaHand" onclick="Kaltura.activatePlayer(\''.$thumbnailDivId.'\',\''.$divId.'\');">
+				<div id="' . $thumbnailDivId . '" style="" class="kalturaHand" onclick="Kaltura.activatePlayer(\''.$thumbnailDivId.'\',\''.$divId.'\');">
 					<img src="' . $thumbnailPlaceHolderUrl . '" style="" />
 				</div>
 				<div id="' . $divId . '" style="height: '.$height.'px"">'.$link.'</div>

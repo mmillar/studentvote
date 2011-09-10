@@ -241,10 +241,10 @@ class KalturaHelpers
 			$url .= "/widget_id/" . $widgetId;
 		else if ($entryId)
 			$url .= "/entry_id/" . $entryId;
-		$url .= "/width/" . $width;
-		$url .= "/height/" . $height;
+		// $url .= "/width/" . $width;
+		// $url .= "/height/" . $height;
 		$url .= "/type/2";
-		$url .= "/bgcolor/000000"; 
+		// $url .= "/bgcolor/000000"; 
 		if ($version !== null)
 			$url .= "/version/" . $version;
 		return $url;
@@ -253,7 +253,7 @@ class KalturaHelpers
 	function getCommentPlaceholderThumbnailUrl($widgetId = null, $entryId = null, $width = 240, $height= 180, $version = 100000)
 	{
 		$url = KalturaHelpers::getThumbnailUrl($widgetId, $entryId, $width, $height, $version);
-		$url .= "/crop_provider/wordpress_comment_placeholder";
+		// $url .= "/crop_provider/wordpress_comment_placeholder";
 		return $url;
 	}
 

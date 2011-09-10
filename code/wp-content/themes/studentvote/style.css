@@ -920,3 +920,124 @@ body {
   right: 11px;
   width: 170px;
 }
+
+.contest-summary {
+  width: 45%;
+  float: left;
+  height: 180px;
+  margin-top: 25px;
+  left: 10px;
+}
+
+.contest-summary .title {
+  color: #a5221a;
+  text-shadow: black 1px 1px 1px;
+  line-height: 1.4em;
+  font-size: 2.5em;
+  font-family: 'Oswald', sans-serif;
+}
+
+.contest-summary .post {
+  margin-top:15px;
+  font-size: 1em;
+}
+
+#contest-comment-form {
+  position: relative;
+  float: right;
+  right: 10px;
+  background-image: url(images/structure/contest-submission.jpg);
+  width: 380px;
+  height: 343px;
+  text-align: center;
+  padding-top: 17px;
+}
+
+#contest-comment-form input {
+  margin-top:10px;
+  width: 310px;
+  height: 31px;
+  background-color: transparent;
+  border: none;
+}
+
+#contest-comment-form #kaltura_video_comment {
+  margin-top: 6px;
+  background-image: url(images/structure/add-video-button.png);
+  font-size: 0em;
+  width: 72px;
+  height: 29px;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#contest-comment-form textarea {
+  margin-top: 16px;
+  width: 315px;
+  height: 95px;
+  background-color: transparent;
+  border: none;
+}
+
+#contest-comment-form #submit {
+  background-image: url(images/structure/submit-button.png);
+  font-size: 0em;
+  width: 131px;
+  height: 30px;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#contest-comments {
+  clear:both;
+  margin: 0px;
+  padding-top: 15px;
+}
+
+#contest-comments .comments-header {
+  padding: 5px 0px;
+  color: #a5221a;
+  line-height: 1.4em;
+  font-size: 2.5em;
+  font-family: 'Oswald', sans-serif;
+  width: 100%;
+  text-align:center;
+  border-top: #ccc dotted 1px;
+  border-bottom: #ccc dotted 1px;
+}
+
+#contest-comments .social-buttons {
+  position: relative;
+  float: right;
+  top: -20px;
+}
+
+#contest-comments .contest-comment {
+  color: #666;
+  padding: 5px;
+  border-bottom: #ccc dotted 2px;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd'); /* for IE */
+  background: -webkit-gradient(linear, left bottom, left top, from(#ddd), to(#fff)); /* for webkit browsers */
+  background: -moz-linear-gradient(bottom,  #ddd,  #fff); /* for firefox 3.6+ */ 
+}
+
+#contest-comments .contest-comment small {
+  font-weight: bold;
+  color: #333;
+}
+
+#contest-comments .contest-comment small p {
+  margin: 4px 0px 0px;
+  color: #a5221a;
+  line-height: 1.5em;
+  font-size: 1.2em;
+  font-family: 'Oswald', sans-serif;
+}
+
+#contest-comments .contest-comment small p img {
+  float: left;
+}
