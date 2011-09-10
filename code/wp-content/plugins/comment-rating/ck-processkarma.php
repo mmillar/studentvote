@@ -118,5 +118,5 @@ if ($total > 0) { $total = "+$total"; }
 //This sends the data back to the js to process and show on the page
 // The dummy field will separate out any potential garbage that
 // WP-superCache may attached to the end of the return.
-echo("done|$k_id|$rating|".str_replace('http://', '', get_bloginfo('wpurl'))."/wp-content/themes/studentvote|$direction|$total|$k_imgIndex|dummy");
+echo("done|$k_id|$rating|".str_replace('http://', '', get_bloginfo('wpurl'))."/wp-content/themes/studentvote/|$direction|$total|$k_imgIndex|dummy");
 ?>

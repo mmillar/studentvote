@@ -242,13 +242,13 @@ function ckrating_get_rating($comment_id)
 function ckrating_display_content()
 {
    global $ck_cache;
-   $plugin_path = get_bloginfo('wpurl').'/wp-content/themes/studentvote';
+   $plugin_path = get_bloginfo('wpurl').'/wp-content/themes/studentvote/';
    $ck_link = str_replace('http://', '', get_bloginfo('wpurl'));
    $ck_comment_ID = get_comment_ID();
    $content = '';
    ckrating_get_rating($ck_comment_ID);
 
-   $imgIndex = "/structure/";
+   $imgIndex = "structure/";
    $ip = getenv("HTTP_X_FORWARDED_FOR") ? getenv("HTTP_X_FORWARDED_FOR") : getenv("REMOTE_ADDR");
    if(strstr($ck_cache['ck_ips'], $ip)) {
       $imgUp = $imgIndex . "voted-button.png";
@@ -265,7 +265,7 @@ function ckrating_display_content()
          $imgStyle = 'style="padding: 0px; border: none; cursor: pointer;"';
       else
          // enlarge
-         $imgStyle = 'style="padding: 0px; border: none; cursor: pointer;" onmouseover="this.width=this.width*1.3" onmouseout="this.width=this.width/1.2"';
+         $imgStyle = 'style="padding: 0px; border: none; cursor: pointer;" onmouseover="this.width=this.width*1.3" onmouseout="this.width=this.width/1.3"';
 //      $onclick_add = "onclick=\"javascript:ckratingKarma('$ck_comment_ID', 'add', '{$ck_link}/wp-content/plugins/comment-rating/', '$imgIndex');\" title=\"". __('Thumb up','ckrating'). "\"";
 //      $onclick_sub = "onclick=\"javascript:ckratingKarma('$ck_comment_ID', 'subtract', '{$ck_link}/wp-content/plugins/comment-rating/', '$imgIndex')\" title=\"". __('Thumb down', 'ckrating') ."\"";
 //EP-12-31-2009 Replaced two lines above with line below for Tooltip Text option.  I think __() is the localization. We shouldn't need that for these strings now. 

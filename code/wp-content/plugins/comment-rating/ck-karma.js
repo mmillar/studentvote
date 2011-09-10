@@ -55,7 +55,7 @@ function ckratingHandleResponse(){
                 //Changes the thumbs to dull gray and disable the action
                 if (response[4] == 'down') {
                   if ( document.getElementById("down-"+response[1]) != null ) { 
-                      document.getElementById("down-"+response[1]).src = "http://"+response[3]+'images/'+response[6]+'checkmark.png';
+                      document.getElementById("down-"+response[1]).src = "http://"+response[3]+'images/'+response[6]+'voted-button.png';
                   }
                 }
                 else {
@@ -68,7 +68,7 @@ function ckratingHandleResponse(){
                 }
                 if (response[4] == 'up') {
                    if ( document.getElementById("up-"+response[1]) != null ) {
-                      document.getElementById("up-"+response[1]).src   = "http://"+response[3]+'images/'+response[6]+'checkmark.png';
+                      document.getElementById("up-"+response[1]).src   = "http://"+response[3]+'images/'+response[6]+'voted-button.png';
                    }
                 }
                 else {
