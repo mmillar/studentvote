@@ -77,13 +77,22 @@
 <script>
 $(function(){
 	$("#author").focus(function() {
-	  if($("#author").val()=="Name") $("#author").val("");
+	  if($("#author").val()=="Name"){
+		  $("#author").val("");
+		  $("#author").css("color","#333");
+		}
 	});
 	$("#email").focus(function() {
-	  if($("#email").val()=="E-mail") $("#email").val("");
+	  if($("#email").val()=="E-mail") {
+		  $("#email").val("");
+		  $("#email").css("color","#333");
+		}  
 	});
 	$("#url").focus(function() {
-	  if($("#url").val()=="Website") $("#url").val("");
+	  if($("#url").val()=="Website") {
+		  $("#url").val("");
+		  $("#url").css("color","#333");
+		}  
 	});
 });
 </script>
