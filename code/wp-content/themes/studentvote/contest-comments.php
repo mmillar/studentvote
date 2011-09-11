@@ -19,11 +19,11 @@
 
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 
-<input type="text" name="author" id="author" value="<?php echo ($comment_author!=null) ? $comment_author:"Name"; ?>" size="22" tabindex="1" style="color:<?php echo ($comment_author!=null)? "333" : "ddd" ?>" />
+<input type="text" name="author" id="author" value="<?php echo ($comment_author!=null) ? $comment_author:"Name"; ?>" size="22" tabindex="1" style="color:<?php echo ($comment_author!=null)? "#333" : "#bbb" ?>" />
 
-<input type="text" name="email" id="email" value="<?php echo ($comment_author_email!=null) ? $comment_author_email:"E-mail"; ?>" size="22" tabindex="2" style="color:<?php echo ($comment_author_email!=null)? "333" : "ddd" ?>" />
+<input type="text" name="email" id="email" value="<?php echo ($comment_author_email!=null) ? $comment_author_email:"E-mail"; ?>" size="22" tabindex="2" style="color:<?php echo ($comment_author_email!=null)? "#333" : "#bbb" ?>" />
 
-<input type="text" name="url" id="url" value="<?php echo ($comment_author_url!=null) ? $comment_author_url:"Website"; ?>" size="22" tabindex="3" style="color:<?php echo ($comment_author_url!=null)? "333" : "ddd" ?>" />
+<input type="text" name="url" id="url" value="<?php echo ($comment_author_url!=null) ? $comment_author_url:"Website"; ?>" size="22" tabindex="3" style="color:<?php echo ($comment_author_url!=null)? "#333" : "#bbb" ?>" />
 
 <!--<p><small><strong>XHTML:</strong> <?php printf(__('You can use these tags: %s'), allowed_tags()); ?></small></p>-->
 <?php do_action('comment_form', $post->ID); ?>
