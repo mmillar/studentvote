@@ -6,16 +6,16 @@ get_header();
   if (have_posts()) : while (have_posts()) : the_post();
   ?>
 <div id="contest">
-	<div id="page-header">
+	<h1 class="page-header">
 		<div class="background">
 			<div class="title">
 				&middot; Contest &middot;
 			</div>
 		</div>
-	</div>
+	</h1>
 
 	<div class="contest-summary" id="post-<?php the_ID(); ?>">
-	  <div class="title"><?php the_title(); ?></div>
+	  <h2 class="title"><?php the_title(); ?></h2>
 	  <div class="post"><?php the_content(__('(more...)')); ?></div>
 	</div>
 

@@ -1,6 +1,6 @@
       <div id="footer">
         <?php wp_footer(); ?>
-        <hr>
+        <hr />
         <div class="themark_footer" onclick="http://themarknews.com"></div>
         <?php wp_nav_menu(array('menu' => 'footer_menu')); ?>
         <script type="text/javascript">

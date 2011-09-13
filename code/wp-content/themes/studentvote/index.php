@@ -14,12 +14,12 @@
 
   <div id="left-column" style="clear:both;">
 <?php 
-  query_posts('cat=6');
+  query_posts('cat=6&post_status=future,publish');
   
   if (have_posts()): ?>
   
   <div id="debates">
-  	<div class="debate-header"></div>
+  	<h2 class="debate-header" alt="Class Debates" title="Class Debates"></h2>
 
 	<ol class="debate-listing"><?php
 	
@@ -28,7 +28,7 @@
 	    <li class="debate-item" id="post-<?php the_ID(); ?>" onclick="window.location='<?php the_permalink() ?>';">
 	
 	      <h2 class="postTitle"><?php the_title(); ?></h2>
-	      <small><?php the_date(); ?></small>
+	      <small><?php if(strtotime($post->post_date) < time()) the_date(); else echo("Coming Soon"); ?></small>
 	
 	    </li>
 	

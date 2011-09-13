@@ -1,13 +1,13 @@
 <?php
 get_header();
 ?>
-<div id="page-header">
+<h1 class="page-header">
 	<div class="background">
 		<div class="title">
 			&middot; <?php the_title(); ?> &middot;
 		</div>
 	</div>
-</div>
+</h1>
 
 <div id="debate-section">
     <div class="nav-bar">

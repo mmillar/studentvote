@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
 
 <head profile="http://gmpg.org/xfn/11">
@@ -13,7 +13,7 @@
 	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
 	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
 	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="<?php bloginfo('atom_url'); ?>" />
-	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
 
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<?php
@@ -45,11 +45,11 @@
 	          <tbody><tr>
 	            <td align="left" style="padding-right:17px;"><a class="toplink" href="home.php"><strong>English</strong></a></td>
 	            <td align="left" style="padding-right:12px;"><a class="toplink" href="http://www.voteetudiant.ca">Français</a></td>
-	            <td align="left"><a target="_blank" href="http://www.facebook.com/pages/StudentVote/103385289724812?ref=ts#!/pages/StudentVote/103385289724812?v=wall&amp;ref=ts"><img height="22" border="0" width="22" alt="Facebook" src="<?php bloginfo('template_url'); ?>/images/structure/facebook.jpg"></a></td>
+	            <td align="left"><a target="_blank" href="http://www.facebook.com/pages/StudentVote/103385289724812?ref=ts#!/pages/StudentVote/103385289724812?v=wall&amp;ref=ts"><img height="22" border="0" width="22" alt="Facebook" src="<?php bloginfo('template_url'); ?>/images/structure/facebook.jpg" /></a></td>
 	            <td width="15"></td>
-	            <td><a target="_blank" href="http://twitter.com/studentvote"><img height="22" border="0" width="22" alt="Twitter" src="<?php bloginfo('template_url'); ?>/images/structure/twitter.jpg"></a></td>
+	            <td><a target="_blank" href="http://twitter.com/studentvote"><img height="22" border="0" width="22" alt="Twitter" src="<?php bloginfo('template_url'); ?>/images/structure/twitter.jpg" /></a></td>
 	            <td width="15"></td>
-	            <td><a target="_blank" href="http://www.youtube.com/studentvote"><img height="22" border="0" width="19" alt="Youtube" src="<?php bloginfo('template_url'); ?>/images/structure/youtube.jpg"></a></td>
+	            <td><a target="_blank" href="http://www.youtube.com/studentvote"><img height="22" border="0" width="19" alt="Youtube" src="<?php bloginfo('template_url'); ?>/images/structure/youtube.jpg" /></a></td>
 	          </tr>
 	        </tbody></table>
 	        </td>
@@ -58,14 +58,14 @@
       </div>
     <div id="nav-section">
 	    <div class="nav-bar">
-			<div class="<?php echo((is_home())?"":"in") ?>active home" onclick="window.location='<?php bloginfo('url'); ?>'"></div>
-			<div class="<?php echo((is_page('Debates')||strpos($_SERVER['REQUEST_URI'],"/debates/"))?"":"in") ?>active debates" onclick="window.location='<?php bloginfo('url'); ?>/debates'"></div>
-			<div class="<?php echo((is_page('Leaders')||strpos($_SERVER['REQUEST_URI'],"/leader/"))?"":"in") ?>active leaders" onclick="window.location='<?php bloginfo('url'); ?>/leaders'"></div>
-			<div class="<?php echo((is_page('Candidates'))?"":"in") ?>active candidates" onclick="window.location='<?php bloginfo('url'); ?>/candidates'"></div>
-			<div class="<?php echo((is_page('Survey')||strpos($_SERVER['REQUEST_URI'],"/survey/"))?"":"in") ?>active survey" onclick="window.location='<?php bloginfo('url'); ?>/survey'"></div>
-			<div class="<?php echo((is_page('Contest')||strpos($_SERVER['REQUEST_URI'],"/contest/"))?"":"in") ?>active contest" onclick="window.location='<?php bloginfo('url'); ?>/contest'"></div>
-			<div class="<?php echo((is_page('Events')||strpos($_SERVER['REQUEST_URI'],"/event/"))?"":"in") ?>active events" onclick="window.location='<?php bloginfo('url'); ?>/events'"></div>
-			<div class="<?php echo((is_page('Blog'))?"":"in") ?>active blog" onclick="window.location='<?php bloginfo('url'); ?>/blog'"></div>
+			<div class="<?php echo((is_home())?"":"in") ?>active home" onclick="window.location='<?php bloginfo('url'); ?>'" alt="Home" title="Home"></div>
+			<div class="<?php echo((is_page('Debates')||strpos($_SERVER['REQUEST_URI'],"/debates/"))?"":"in") ?>active debates" onclick="window.location='<?php bloginfo('url'); ?>/debates'" alt="Debates" title="Debates"></div>
+			<div class="<?php echo((is_page('Leaders')||strpos($_SERVER['REQUEST_URI'],"/leader/"))?"":"in") ?>active leaders" onclick="window.location='<?php bloginfo('url'); ?>/leaders'" alt="Leaders" title="Leaders"></div>
+			<div class="<?php echo((is_page('Candidates'))?"":"in") ?>active candidates" onclick="window.location='<?php bloginfo('url'); ?>/candidates'" alt="Candidates" title="Candidates"></div>
+			<div class="<?php echo((is_page('Survey')||strpos($_SERVER['REQUEST_URI'],"/survey/"))?"":"in") ?>active survey" onclick="window.location='<?php bloginfo('url'); ?>/survey'" alt="Survey" title="Survey"></div>
+			<div class="<?php echo((is_page('Contest')||strpos($_SERVER['REQUEST_URI'],"/contest/"))?"":"in") ?>active contest" onclick="window.location='<?php bloginfo('url'); ?>/contest'" alt="Contest" title="Contest"></div>
+			<div class="<?php echo((is_page('Events')||strpos($_SERVER['REQUEST_URI'],"/event/"))?"":"in") ?>active events" onclick="window.location='<?php bloginfo('url'); ?>/events'" alt="Events" title="Events"></div>
+			<div class="<?php echo((is_page('Blog'))?"":"in") ?>active blog" onclick="window.location='<?php bloginfo('url'); ?>/blog'" alt="Blog" title="Blog"></div>
 		</div>
 	</div>
     </div>

@@ -3,17 +3,17 @@
 Template Name: Debates
 */
 get_header(); ?>
- <div id="page-header">
+ <h1 class="page-header">
   <div class="background">
     <div class="title">
       &middot; <?php the_title(); ?> &middot;
     </div>
   </div>
-</div>
+</h1>
 
   <div id="centered-column" style="clear:both;">
   <?php 
-    query_posts('cat=6');
+    query_posts('cat=6&post_status=future,publish');
     
     if (have_posts()): ?>
     
@@ -26,7 +26,7 @@ get_header(); ?>
       <li class="debate-item-long" id="post-<?php the_ID(); ?>" onclick="window.location='<?php the_permalink() ?>';">
   
         <h2 class="postTitle"><?php the_title(); ?></h2>
-        <small><?php the_date(); ?></small>
+        <small><?php if(strtotime($post->post_date) < time()) the_date(); else echo("Coming Soon"); ?></small>
   
       </li>
   

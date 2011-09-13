@@ -121,7 +121,7 @@ body {
     padding: 0px;
   }
     #pagination li {
-      display: inlne;
+      display: inlne-block;
     }
     #pagination .previous {
       text-align: left;
@@ -331,10 +331,11 @@ div.aligncenter {
   width:680px;
 }
 
-#debates .debate-header {
+#debates h2.debate-header {
 	width: 464px;
 	height: 68px;
 	background: url(images/structure/home-debate.jpg);
+  margin: 0px;
 }
 
 #debates ol.debate-listing {
@@ -521,7 +522,7 @@ div.aligncenter {
 
 #debate-section .nav-bar { 
   width: 510px;
-  height: 60px;
+  height: 50px;
   display: block;    
   margin-left: auto;
   margin-right: auto;
@@ -529,61 +530,58 @@ div.aligncenter {
 
 #debate-section .active {
   float:left;
-  background-image: url(images/structure/debate-header.jpg);
+  background-image: url(images/structure/debate-header-active.jpg);
 }
 
 #debate-section .inactive {
   float:left;
-  background-image: url(images/structure/debate-header.jpg);
-}
-
-#debate-section .inactive:hover {
-  background-image: url(images/structure/debate-header.jpg);
+  background-image: url(images/structure/debate-header-inactive.jpg);
 }
 
 #debate-section .the-issue {
   width: 115px;
-  height: 60px;
+  height: 50px;
   background-position: 0 0;
   display: inline-block;
 }
 
 #debate-section .question {
   width: 95px;
-  height: 60px;
+  height: 50px;
   background-position: -115px 0;
   display: inline-block;
 }
 
 #debate-section .debate {
   width: 95px;
-  height: 60px;
+  height: 50px;
   background-position: -210px 0;
   display: inline-block;
 }
 
 #debate-section .comment {
   width: 95px;
-  height: 60px;
+  height: 50px;
   background-position: -305px 0;
   display: inline-block;
 }
 
 #debate-section .vote {
   width: 110px;
-  height: 60px;
+  height: 50px;
   background-position: -400px 0;
   display: inline-block;
 }
 
-#page-header { 
+h1.page-header { 
   width:100%; 
   text-align:center; 
   padding: 15px 0px;
   height: 60px;
+  margin: 0px;
 }
 
-#page-header .background { 
+h1.page-header .background { 
   position: relative;
   float: left;
   left: -40px;
@@ -596,10 +594,11 @@ div.aligncenter {
   padding: 13px 0 7px;
 }
 
-#page-header .background .title{ 
+h1.page-header .background .title{ 
   color: #fff;
   text-shadow: black 1px 1px 1px;
-  font-size: 2em;
+  font-size: 1em;
+  font-weight: normal;
   font-family: 'Oswald', sans-serif;
   margin-left: auto;
   margin-right: auto;
@@ -624,7 +623,7 @@ div.aligncenter {
 #debate-arena-holder .position-two {
   position: relative;
   float: right;
-  right: 27px;
+  right: 29px;
   top: 160px;
 }
 
@@ -730,6 +729,7 @@ body {
   font-size: 1.4em;
   color: #a5221a;
   font-family: 'Oswald', sans-serif;
+  margin-bottom: 7px;
 }
 
 #centered-column .wp-polls-ans ul li .radio {
@@ -876,6 +876,7 @@ body {
   font-family: Arial;
   font-size: 0.8em;
   color: black;
+  text-shadow: none;
 }
 
 #right-column ul li.widget_polls-widget .wp-polls strong {
@@ -929,12 +930,13 @@ body {
   left: 10px;
 }
 
-.contest-summary .title {
+.contest-summary h2.title {
   color: #a5221a;
   text-shadow: black 1px 1px 1px;
   line-height: 1.4em;
   font-size: 2.5em;
   font-family: 'Oswald', sans-serif;
+  margin: 0px;
 }
 
 .contest-summary .post {
@@ -946,15 +948,15 @@ body {
   position: relative;
   float: right;
   right: 10px;
-  background-image: url(images/structure/contest-submission.jpg);
+  background-image: url(images/structure/contest-submission-long.jpg);
   width: 380px;
-  height: 343px;
+  height: 431px;
   text-align: center;
-  padding-top: 17px;
+  padding-top: 19px;
 }
 
 #contest-comment-form input {
-  margin-top:10px;
+  margin-top:9px;
   width: 310px;
   height: 31px;
   background-color: transparent;
@@ -1000,7 +1002,7 @@ body {
   padding-top: 15px;
 }
 
-#contest-comments .comments-header {
+#contest-comments h2.comments-header {
   padding: 5px 0px;
   color: #a5221a;
   line-height: 1.4em;
@@ -1010,6 +1012,7 @@ body {
   text-align:center;
   border-top: #ccc dotted 1px;
   border-bottom: #ccc dotted 1px;
+  margin: 0px;
 }
 
 #contest-comments .social-buttons {
@@ -1022,7 +1025,7 @@ body {
   color: #666;
   padding: 5px;
   border-bottom: #ccc dotted 2px;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd'); /* for IE */
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#dddddd'); /* for IE */
   background: -webkit-gradient(linear, left bottom, left top, from(#ddd), to(#fff)); /* for webkit browsers */
   background: -moz-linear-gradient(bottom,  #ddd,  #fff); /* for firefox 3.6+ */ 
 }
@@ -1043,3 +1046,20 @@ body {
 #contest-comments .contest-comment small p img {
   float: left;
 }
+
+#idc-container-parent {
+  position: relative;
+  top: -20px;
+}
+
+#idc-container-parent #idc-container {
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:0px;
+  line-height: 0px;
+}
+
+#idc-container-parent #idc-container h3 {
+  display: none;
+}
+

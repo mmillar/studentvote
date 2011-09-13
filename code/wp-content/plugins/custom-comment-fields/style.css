@@ -1,0 +1,13 @@
+.widefat#iti-ccf-post-types .check-column { width:9em !important; }
+.widefat#iti-ccf-post-types .check-column label { position:relative; top:-2px; }
+
+#iti-ccf-fields col#iti-ccf-order   { width:5em; }
+#iti-ccf-fields col#iti-ccf-name    { width:30%; }
+#iti-ccf-fields col#iti-ccf-label   { width:30%; }
+#iti-ccf-fields col#iti-ccf-delete  { width:8em; }
+#iti-ccf-fields td input { width:95%; }
+#iti-ccf-fields td img { display:block; cursor:move; }
+#iti-ccf-fields .iti-buttons { overflow:hidden; zoom:1; }
+#iti-ccf-fields .iti-buttons .add { width:40%; float:left; margin:5px 0; padding:1.5em 0; }
+#iti-ccf-fields .iti-buttons .submit { width:40%; float:right; }
+#iti-ccf-fields .iti-buttons .submit input { display:block; float:right; }

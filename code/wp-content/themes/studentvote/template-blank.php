@@ -5,14 +5,13 @@ Template Name: Blank
 get_header();
   if (have_posts()) : while (have_posts()) : the_post();
   ?>
-<div id="page-header">
+<h1 class="page-header">
 	<div class="background">
 		<div class="title">
 			&middot; <?php the_title(); ?> &middot;
 		</div>
 	</div>
-</div>
-
+</h1>
 
 <div class="postWrapper" id="post-<?php the_ID(); ?>">
 

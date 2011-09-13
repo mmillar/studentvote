@@ -19,11 +19,15 @@
 
 <form action="<?php echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
 
-<input type="text" name="author" id="author" value="<?php echo ($comment_author!=null) ? $comment_author:"Name"; ?>" size="22" tabindex="1" style="color:<?php echo ($comment_author!=null)? "#333" : "#bbb" ?>" />
+<input type="text" name="author" id="author" value="First Name" size="22" tabindex="1" style="color:#bbb" />
 
-<input type="text" name="email" id="email" value="<?php echo ($comment_author_email!=null) ? $comment_author_email:"E-mail"; ?>" size="22" tabindex="2" style="color:<?php echo ($comment_author_email!=null)? "#333" : "#bbb" ?>" />
+<input type="text" name="lastname" id="lastname" value="Last Name" size="22" tabindex="1" style="color:#bbb" />
 
-<input type="text" name="url" id="url" value="<?php echo ($comment_author_url!=null) ? $comment_author_url:"Website"; ?>" size="22" tabindex="3" style="color:<?php echo ($comment_author_url!=null)? "#333" : "#bbb" ?>" />
+<input type="text" name="email" id="email" value="Email Address" size="22" tabindex="2" style="color:#bbb" />
+
+<input type="text" name="city" id="city" value="City" size="22" tabindex="2" style="color:#bbb" />
+
+<input type="text" name="subject" id="subject" value="Submission Title" size="22" tabindex="3" style="color:#bbb" />
 
 <!--<p><small><strong>XHTML:</strong> <?php printf(__('You can use these tags: %s'), allowed_tags()); ?></small></p>-->
 <?php do_action('comment_form', $post->ID); ?>
@@ -43,7 +47,7 @@
 </div>
 
 <div id="contest-comments">
-<div class="comments-header">Submissions</div>
+<h2 class="comments-header">Submissions</h2>
 <?php if ( $comments ) : ?>
 <div id="comments-list">
 	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e6b75ee1d02c461"></script>
@@ -51,10 +55,10 @@
 <?php foreach ($comments as $comment) : ?>
 	<div id="comment-<?php comment_ID() ?>" class="contest-comment">
 		<div class="comment-text"><?php comment_text() ?></div>
-		<small><?php _e('by'); ?> <?php comment_author_link() ?></small>
+		<small><?php _e('by'); ?> <?php comment_author() ?>, <?php print $comment->extra_city; ?></small>
 		<div class="social-buttons">
 			<!-- AddThis Button BEGIN -->
-			<div class="addthis_toolbox addthis_default_style " addthis:url="<?php echo get_permalink( $post->ID )."#comment-"; comment_ID() ?>" addthis:title="<?php echo get_comment_author() ?>'s Contest Entry">
+			<div class="addthis_toolbox addthis_default_style " addthis:url="<?php echo get_permalink( $post->ID )."#comment-"; comment_ID() ?>" addthis:title="Vote for me to win lunch with the next Premier">
 			<a class="addthis_button_facebook"></a>
 			<a class="addthis_button_twitter"></a>
 			<a class="addthis_button_email"></a>
@@ -77,21 +81,33 @@
 <script>
 $(function(){
 	$("#author").focus(function() {
-	  if($("#author").val()=="Name"){
+	  if($("#author").val()=="First Name"){
 		  $("#author").val("");
 		  $("#author").css("color","#333");
 		}
 	});
+	$("#lastname").focus(function() {
+	  if($("#lastname").val()=="Last Name"){
+		  $("#lastname").val("");
+		  $("#lastname").css("color","#333");
+		}
+	});
 	$("#email").focus(function() {
-	  if($("#email").val()=="E-mail") {
+	  if($("#email").val()=="Email Address") {
 		  $("#email").val("");
 		  $("#email").css("color","#333");
 		}  
 	});
-	$("#url").focus(function() {
-	  if($("#url").val()=="Website") {
-		  $("#url").val("");
-		  $("#url").css("color","#333");
+	$("#city").focus(function() {
+	  if($("#city").val()=="City") {
+		  $("#city").val("");
+		  $("#city").css("color","#333");
+		}  
+	});
+	$("#subject").focus(function() {
+	  if($("#subject").val()=="Submission Title") {
+		  $("#subject").val("");
+		  $("#subject").css("color","#333");
 		}  
 	});
 });
