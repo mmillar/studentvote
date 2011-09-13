@@ -56,7 +56,7 @@
 	<div id="comment-<?php comment_ID() ?>" class="contest-comment">
 		<h4 class="comment-title" style="margin:0px"><?php print $comment->extra_subject; ?></h4>
 		<div class="comment-text"><?php comment_text() ?></div>
-		<small><?php _e('by'); ?> <?php comment_author() ?>, <?php print $comment->extra_city; ?></small>
+		<small><?php _e('by'); ?> <?php comment_author_with_city() ?></small>
 		<div class="social-buttons">
 			<!-- AddThis Button BEGIN -->
 			<div class="addthis_toolbox addthis_default_style " addthis:url="<?php echo get_permalink( $post->ID )."#comment-"; comment_ID() ?>" addthis:title="Vote for me to win lunch with the next Premier">

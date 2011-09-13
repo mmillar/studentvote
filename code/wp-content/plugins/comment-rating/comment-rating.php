@@ -38,7 +38,7 @@ add_action('admin_menu', 'ckrating_options_page');
 add_action('wp_head', 'ckrating_add_highlight_style');
 // late enough to avoid most conflicts, early enough to avoid conflicting
 // with WP Threaded Comment
-add_filter('get_comment_author_link', 'ckrating_display_filter', 9000); 
+add_filter('get_comment_author_with_city', 'ckrating_display_filter', 9000); 
 add_filter('comment_class', 'ckrating_comment_class', 10 , 4 );
 add_action('init', 'ckrating_add_javascript');  // add javascript in the footer
 

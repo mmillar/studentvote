@@ -198,4 +198,11 @@ class SVWidget extends WP_Widget {
 // register FooWidget widget
 add_action( 'widgets_init', create_function( '', 'return register_widget("SVWidget");' ) );
 
+
+function comment_author_with_city( $comment_ID = 0 ) {
+  $author = apply_filters('comment_author', get_comment_author( $comment_ID ) );
+  $comment = get_comment( $comment_ID );
+  echo apply_filters('get_comment_author_with_city', $author.", ".$comment->extra_city);
+}
+
 ?>
