@@ -19,7 +19,7 @@
   if (have_posts()): ?>
   
   <div id="debates">
-  	<h2 class="debate-header" alt="Class Debates" title="Class Debates"></h2>
+  	<h2 class="debate-header">Class Debates</h2>
 
 	<ol class="debate-listing"><?php
 	

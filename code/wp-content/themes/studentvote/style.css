@@ -36,7 +36,7 @@ body {
   /** the heading and tagline are h1 on homepage and h4 on internal */
   #header h1,
   #header h4 {
-    font-size: 30px;
+    font-size: 2.4em;
     margin: 0;
     padding: 10px 0 10px 0;
   }
@@ -92,7 +92,7 @@ body {
   /* titles are h2 on homepage and h1 for internal */
   #primaryContent h1.postTitle,
   #primaryContent h2.postTitle {
-    font-size: 22px;
+    font-size: 2em;
   }
 
   #primaryContent h3 {
@@ -209,74 +209,78 @@ div.aligncenter {
    margin-left: auto;
    margin-right: auto;
   cursor: pointer;
+  text-shadow: black 1px 1px 1px;
+  font-size: 1.5em;
+  font-family: 'Oswald', sans-serif;
 }
 
 #nav-section .active {
 	float:left;
-	background-image: url(images/structure/nav-active.jpg);
+	background-image: url(images/structure/nav-empty.jpg);
+  color: #a5221a;
+  text-align: center;
+  padding-top: 10px;
+  height: 37px;
 }
 
 #nav-section .inactive {
 	float:left;
-	background-image: url(images/structure/nav-inactive.jpg);
+	background-image: url(images/structure/nav-empty.jpg);
+  color: #aaa;
+  text-align: center;
+  padding-top: 10px;
+  height: 37px;
 }
 
 #nav-section .inactive:hover {
-	background-image: url(images/structure/nav-active.jpg);
+	background-image: url(images/structure/nav-empty.jpg);
+  color: #a5221a;
 }
 
 #nav-section .home {
 	width: 88px;
-	height: 47px;
     background-position: 0 0;
     display: inline-block;
 }
 
 #nav-section .debates {
 	width: 109px;
-	height: 47px;
     background-position: -88px 0;
     display: inline-block;
 }
 
 #nav-section .leaders {
 	width: 108px;
-	height: 47px;
     background-position: -197px 0;
     display: inline-block;
 }
 
 #nav-section .candidates {
 	width: 137px;
-	height: 47px;
     background-position: -305px 0;
     display: inline-block;
 }
 
 #nav-section .survey {
 	width: 101px;
-	height: 47px;
     background-position: -442px 0;
     display: inline-block;
 }
 
 #nav-section .contest {
 	width: 107px;
-	height: 47px;
     background-position: -543px 0;
     display: inline-block;
 }
 
 #nav-section .events {
 	width: 95px;
-	height: 47px;
     background-position: -650px 0;
     display: inline-block;
 }
 
 #nav-section .blog {
 	width: 88px;
-	height: 47px;
     background-position: -745px 0;
     display: inline-block;
 }
@@ -332,10 +336,15 @@ div.aligncenter {
 }
 
 #debates h2.debate-header {
-	width: 464px;
-	height: 68px;
-	background: url(images/structure/home-debate.jpg);
+	width: 434px;
+	height: 38px;
+  padding: 25px 0px 0px 25px;
+	background: url(images/structure/home-section-header.jpg);
   margin: 0px;
+  color: #a5221a;
+  text-shadow: black 1px 1px 1px;
+  font-size: 2em;
+  font-family: 'Oswald', sans-serif;
 }
 
 #debates ol.debate-listing {
@@ -430,14 +439,14 @@ div.aligncenter {
 
 #footer ul li a {
 	text-decoration: none;
-	color: #ccc;
-	font-size: 0.7em;
+	color: #999;
+	font-size: 1em;
 }
 
 #footer .themark_footer {
 	position: relative;
 	float:right;
-	top: -35px;
+	top: -33px;
 	background: url(images/structure/themark_footer.jpg) no-repeat;
 	width: 157px;
 	height: 74px;
@@ -1067,3 +1076,4 @@ body {
 #centered-column .wp-polls {
   font-size: 2em;
 }
+
