@@ -54,6 +54,7 @@
 
 <?php foreach ($comments as $comment) : ?>
 	<div id="comment-<?php comment_ID() ?>" class="contest-comment">
+		<h4 class="comment-title"><?php print $comment->extra_subject; ?></h4>
 		<div class="comment-text"><?php comment_text() ?></div>
 		<small><?php _e('by'); ?> <?php comment_author() ?>, <?php print $comment->extra_city; ?></small>
 		<div class="social-buttons">

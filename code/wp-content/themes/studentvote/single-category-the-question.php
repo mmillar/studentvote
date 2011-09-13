@@ -1,13 +1,13 @@
 <?php
 get_header();
 ?>
-<div id="page-header">
+<h1 class="page-header">
 	<div class="background">
 		<div class="title">
 			&middot; LEADERS - The Question &middot;
 		</div>
 	</div>
-</div>
+</h1>
 
 <div id="centered-column" style="clear:both;">
 <?php if (have_posts()) : ?>
