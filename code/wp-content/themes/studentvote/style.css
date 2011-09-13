@@ -998,7 +998,8 @@ body {
 
 #contest-comments {
   clear:both;
-  margin: 0px;
+  width: 75%;
+  margin: 0px auto;
   padding-top: 15px;
 }
 
