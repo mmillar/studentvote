@@ -63,7 +63,7 @@
 			<div class="<?php echo((is_page('Leaders')||strpos($_SERVER['REQUEST_URI'],"/leader/"))?"":"in") ?>active leaders" onclick="window.location='<?php bloginfo('url'); ?>/leaders'">LEADERS</div>
 			<div class="<?php echo((is_page('Candidates'))?"":"in") ?>active candidates" onclick="window.location='<?php bloginfo('url'); ?>/candidates'">CANDIDATES</div>
 			<div class="<?php echo((is_page('Survey')||strpos($_SERVER['REQUEST_URI'],"/survey/"))?"":"in") ?>active survey" onclick="window.location='<?php bloginfo('url'); ?>/survey'">SURVEY</div>
-			<div class="<?php echo((is_page('Contest')||strpos($_SERVER['REQUEST_URI'],"/contest/"))?"":"in") ?>active contest" onclick="window.location='<?php bloginfo('url'); ?>/contest'">CONTEST</div>
+			<div class="<?php echo((is_page('Contest')||strpos($_SERVER['REQUEST_URI'],"/contest"))?"":"in") ?>active contest" onclick="window.location='<?php bloginfo('url'); ?>/contest'">CONTEST</div>
 			<div class="<?php echo((is_page('Events')||strpos($_SERVER['REQUEST_URI'],"/event/"))?"":"in") ?>active events" onclick="window.location='<?php bloginfo('url'); ?>/events'">EVENTS</div>
 			<div class="<?php echo((is_page('Blog'))?"":"in") ?>active blog" onclick="window.location='<?php bloginfo('url'); ?>/blog'">BLOG</div>
 		</div>
