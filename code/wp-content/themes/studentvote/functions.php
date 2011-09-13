@@ -148,7 +148,7 @@ class SVWidget extends WP_Widget {
     $url = apply_filters( 'widget_url', $instance['url'] );
 		echo $before_widget; ?>
     <div onclick="window.location='<?php echo $url; ?>';">
-		<img src="<?php echo $img; ?>" alt="<?php echo $title; ?> image" />
+		<img src="<?php echo $img; ?>" alt="<?php echo $title; ?> image" title="<?php echo $title; ?> image" />
 		<div class="title"><?php echo $title; ?></div>
 		<div class="text"><?php echo $text; ?></div>
     </div>
