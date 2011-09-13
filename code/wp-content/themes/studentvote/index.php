@@ -14,7 +14,7 @@
 
   <div id="left-column" style="clear:both;">
 <?php 
-  query_posts('cat=6&post_status=future,publish');
+  query_posts('cat=6&post_status=future,publish&order=ASC');
   
   if (have_posts()): ?>
   
