@@ -23,13 +23,22 @@ get_header(); ?>
   
       while (have_posts()) : the_post(); ?>
   
-      <li class="debate-item-long" id="post-<?php the_ID(); ?>" onclick="window.location='<?php the_permalink() ?>';">
-  
-        <h2 class="postTitle"><?php the_title(); ?></h2>
-        <small><?php if(strtotime($post->post_date) < time()) the_date(); else echo("Coming Soon"); ?></small>
-  
-      </li>
-  
+      <?php if(strtotime($post->post_date) < time()): ?>
+        <li class="debate-item-long active-debate-item" id="post-<?php the_ID(); ?>" onclick="window.location='<?php the_permalink() ?>';">
+    
+          <h2 class="postTitle"><?php the_title(); ?></h2>
+          <small><?php the_date(); ?></small>
+    
+        </li>
+      <?php else: ?>
+        <li class="debate-item-long" id="post-<?php the_ID(); ?>">
+    
+          <h2 class="postTitle"><?php the_title(); ?></h2>
+          <small>Coming Soon</small>
+    
+        </li>
+      <?php endif; ?>
+
       <?php endwhile; ?>
   
   </ol>

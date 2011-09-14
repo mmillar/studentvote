@@ -58,14 +58,14 @@
       </div>
     <div id="nav-section">
 	    <div class="nav-bar">
-			<div class="<?php echo((is_home())?"":"in") ?>active home" onclick="window.location='<?php bloginfo('url'); ?>'">HOME</div>
-			<div class="<?php echo((is_page('Debates')||strpos($_SERVER['REQUEST_URI'],"/debates/"))?"":"in") ?>active debates" onclick="window.location='<?php bloginfo('url'); ?>/debates'">DEBATES</div>
-			<div class="<?php echo((is_page('Leaders')||strpos($_SERVER['REQUEST_URI'],"/leader/"))?"":"in") ?>active leaders" onclick="window.location='<?php bloginfo('url'); ?>/leaders'">LEADERS</div>
-			<div class="<?php echo((is_page('Candidates'))?"":"in") ?>active candidates" onclick="window.location='<?php bloginfo('url'); ?>/candidates'">CANDIDATES</div>
-			<div class="<?php echo((is_page('Survey')||strpos($_SERVER['REQUEST_URI'],"/survey/"))?"":"in") ?>active survey" onclick="window.location='<?php bloginfo('url'); ?>/survey'">SURVEY</div>
-			<div class="<?php echo((is_page('Contest')||strpos($_SERVER['REQUEST_URI'],"contest"))?"":"in") ?>active contest" onclick="window.location='<?php bloginfo('url'); ?>/contest'">CONTEST</div>
-			<div class="<?php echo((is_page('Events')||strpos($_SERVER['REQUEST_URI'],"/event/"))?"":"in") ?>active events" onclick="window.location='<?php bloginfo('url'); ?>/events'">EVENTS</div>
-			<div class="<?php echo((is_page('Blog'))?"":"in") ?>active blog" onclick="window.location='<?php bloginfo('url'); ?>/blog'">BLOG</div>
+			<div class="<?php echo((is_home())?"":"in") ?>active home" onclick="window.location='<?php bloginfo('url'); ?>'" onkeypress="window.location='<?php bloginfo('url'); ?>'" tabindex=1>HOME</div>
+			<div class="<?php echo((is_page('Debates')||strpos($_SERVER['REQUEST_URI'],"/debates/"))?"":"in") ?>active debates" onclick="window.location='<?php bloginfo('url'); ?>/debates'" onkeypress="window.location='<?php bloginfo('url'); ?>/debates'" tabindex=2>DEBATES</div>
+			<div class="<?php echo((is_page('Leaders')||strpos($_SERVER['REQUEST_URI'],"/leader/"))?"":"in") ?>active leaders" onclick="window.location='<?php bloginfo('url'); ?>/leaders'" onkeypress="window.location='<?php bloginfo('url'); ?>/leaders'" tabindex=3>LEADERS</div>
+			<div class="<?php echo((is_page('Candidates'))?"":"in") ?>active candidates" onclick="window.location='<?php bloginfo('url'); ?>/candidates'" onkeypress="window.location='<?php bloginfo('url'); ?>/candidates'" tabindex=4>CANDIDATES</div>
+			<div class="<?php echo((is_page('Survey')||strpos($_SERVER['REQUEST_URI'],"/survey/"))?"":"in") ?>active survey" onclick="window.location='<?php bloginfo('url'); ?>/survey'" onkeypress="window.location='<?php bloginfo('url'); ?>/survey'" tabindex=5>SURVEY</div>
+			<div class="<?php echo((is_page('Contest')||strpos($_SERVER['REQUEST_URI'],"contest"))?"":"in") ?>active contest" onclick="window.location='<?php bloginfo('url'); ?>/contest'" onkeypress="window.location='<?php bloginfo('url'); ?>/contest'" tabindex=6>CONTEST</div>
+			<div class="<?php echo((is_page('Events')||strpos($_SERVER['REQUEST_URI'],"/event/"))?"":"in") ?>active events" onclick="window.location='<?php bloginfo('url'); ?>/events'" onkeypress="window.location='<?php bloginfo('url'); ?>/events'" tabindex=7>EVENTS</div>
+			<div class="<?php echo((is_page('Blog'))?"":"in") ?>active blog" onclick="window.location='<?php bloginfo('url'); ?>/blog'" onkeypress="window.location='<?php bloginfo('url'); ?>/blog'" tabindex=8>BLOG</div>
 		</div>
 	</div>
     </div>

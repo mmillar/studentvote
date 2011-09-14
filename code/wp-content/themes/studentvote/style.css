@@ -214,6 +214,11 @@ div.aligncenter {
   font-family: 'Oswald', sans-serif;
 }
 
+#nav-section .nav-bar a { 
+  outline: none;
+  text-decoration: none;
+}
+
 #nav-section .active {
 	float:left;
 	background-image: url(images/structure/nav-empty.jpg);
@@ -336,7 +341,7 @@ div.aligncenter {
 }
 
 #debates h2.debate-header {
-	width: 434px;
+	width: 437px;
 	height: 38px;
   padding: 25px 0px 0px 25px;
 	background: url(images/structure/home-section-header.jpg);
@@ -361,7 +366,6 @@ div.aligncenter {
 	padding-top: 14px;
 	width: 434px;
 	height: 54px;
-  cursor: pointer;
   color: #555555;
 }
 
@@ -372,12 +376,12 @@ div.aligncenter {
   padding-top: 14px;
   width: 680px;
   height: 44px;
-  cursor: pointer;
   color: #555555;
 }
 
-#debates .debate-listing li.debate-item:hover, #debates .debate-listing li.debate-item-long:hover {
+#debates .debate-listing li.active-debate-item:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 #debates .debate-listing li.debate-item h2, #debates .debate-listing li.debate-item-long h2 {
@@ -439,7 +443,7 @@ div.aligncenter {
 
 #footer ul li a {
 	text-decoration: none;
-	color: #999;
+	color: #666;
 	font-size: 1em;
 }
 
@@ -470,7 +474,9 @@ div.aligncenter {
   cursor: pointer;
 }
 
-#right-column ul li.widget_svwidget .title {
+#right-column ul li.widget_svwidget h3.title {
+  margin: 0px;
+  font-weight: normal;
 	padding: 30px 22px 0px;
 	color: #a5221a;
 	text-shadow: black 1px 1px 1px;
@@ -1074,6 +1080,6 @@ body {
 }
 
 #centered-column .wp-polls {
-  font-size: 2em;
+  font-size: 1.3em;
 }
 

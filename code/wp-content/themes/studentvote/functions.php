@@ -145,11 +145,12 @@ class SVWidget extends WP_Widget {
 		$title = apply_filters( 'widget_title', $instance['title'] );
 		$text = apply_filters( 'widget_text', $instance['text'] );
     $img = apply_filters( 'widget_img', $instance['img'] );
+    $alt = apply_filters( 'widget_img', $instance['alt'] );
     $url = apply_filters( 'widget_url', $instance['url'] );
 		echo $before_widget; ?>
     <div onclick="window.location='<?php echo $url; ?>';">
-		<img src="<?php echo $img; ?>" alt="<?php echo $title; ?> image" title="<?php echo $title; ?> image" />
-		<div class="title"><?php echo $title; ?></div>
+		<img src="<?php echo $img; ?>" alt="<?php echo $alt; ?>" title="<?php echo $alt; ?>" />
+		<h3 class="title"><?php echo $title; ?></h3>
 		<div class="text"><?php echo $text; ?></div>
     </div>
 		<?php echo $after_widget;
@@ -158,7 +159,8 @@ class SVWidget extends WP_Widget {
 	/** @see WP_Widget::update */
 	function update( $new_instance, $old_instance ) {
 		$instance = $old_instance;
-		$instance['title'] = strip_tags($new_instance['title']);
+    $instance['title'] = strip_tags($new_instance['title']);
+    $instance['alt'] = strip_tags($new_instance['alt']);
 		$instance['text'] = $new_instance['text'];
     $instance['img'] = $new_instance['img'];
     $instance['url'] = $new_instance['url'];
@@ -168,7 +170,8 @@ class SVWidget extends WP_Widget {
 	/** @see WP_Widget::form */
 	function form( $instance ) {
 		if ( $instance ) {
-			$title = esc_attr( $instance[ 'title' ] );
+      $title = esc_attr( $instance[ 'title' ] );
+      $alt = esc_attr( $instance[ 'alt' ] );
 			$text = $instance[ 'text' ];
       $image = $instance[ 'img' ];
       $url = $instance[ 'url' ];
@@ -185,6 +188,10 @@ class SVWidget extends WP_Widget {
     <p>
     <label for="<?php echo $this->get_field_id('image'); ?>"><?php _e('Image:'); ?></label> 
     <input class="widefat" id="<?php echo $this->get_field_id('image'); ?>" name="<?php echo $this->get_field_name('img'); ?>" type="text" value="<?php echo $image; ?>" />
+    </p>
+    <p>
+    <label for="<?php echo $this->get_field_id('alt'); ?>"><?php _e('Image Alt Text:'); ?></label> 
+    <input class="widefat" id="<?php echo $this->get_field_id('alt'); ?>" name="<?php echo $this->get_field_name('alt'); ?>" type="text" value="<?php echo $alt; ?>" />
     </p>
     <p>
     <label for="<?php echo $this->get_field_id('url'); ?>"><?php _e('Url:'); ?></label> 
