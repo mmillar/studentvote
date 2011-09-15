@@ -26,7 +26,7 @@
 	    while (have_posts()) : the_post(); ?>
 	
       <?php if(strtotime($post->post_date) < time()): ?>
-        <li class="debate-item active-debate-item" id="post-<?php the_ID(); ?>" onclick="window.location='<?php the_permalink() ?>';">
+        <li class="debate-item active-debate-item" id="post-<?php the_ID(); ?>" tabindex=0 onclick="jumpToURL('<?php the_permalink() ?>');" onkeypress="jumpToCheckedURL('<?php the_permalink() ?>',event);">
     
           <h2 class="postTitle"><?php the_title(); ?></h2>
           <small><?php the_date(); ?></small>

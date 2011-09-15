@@ -148,7 +148,7 @@ class SVWidget extends WP_Widget {
     $alt = apply_filters( 'widget_img', $instance['alt'] );
     $url = apply_filters( 'widget_url', $instance['url'] );
 		echo $before_widget; ?>
-    <div onclick="window.location='<?php echo $url; ?>';">
+    <div tabindex=0 onclick="jumpToURL('<?php echo $url; ?>');" onkeypress="jumpToCheckedURL('<?php echo $url; ?>',event);">
 		<img src="<?php echo $img; ?>" alt="<?php echo $alt; ?>" title="<?php echo $alt; ?>" />
 		<h3 class="title"><?php echo $title; ?></h3>
 		<div class="text"><?php echo $text; ?></div>

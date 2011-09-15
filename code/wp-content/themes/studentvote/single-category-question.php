@@ -11,14 +11,13 @@ get_header();
 
 <div id="debate-section">
     <div class="nav-bar">
-		<div class="<?php echo(strpos($_SERVER['REQUEST_URI'],"/the-issue/")?"":"in") ?>active the-issue"></div>
-		<div class="<?php echo(strpos($_SERVER['REQUEST_URI'],"/question/")?"":"in") ?>active question"></div>
-		<div class="<?php echo(strpos($_SERVER['REQUEST_URI'],"/debate/")?"":"in") ?>active debate"></div>
-		<div class="<?php echo(strpos($_SERVER['REQUEST_URI'],"/comment/")?"":"in") ?>active comment"></div>
-		<div class="<?php echo(strpos($_SERVER['REQUEST_URI'],"/vote/")?"":"in") ?>active vote"></div>
+		<div class="<?php echo(strpos($_SERVER['REQUEST_URI'],"/the-issue/")?"":"in") ?>active the-issue" tabindex=0 onclick="jumpToURL('<?php echo(get_post_meta($post->ID, 'first-page', true)); ?>');"  onkeypress="jumpToCheckedURL('<?php echo(get_post_meta($post->ID, 'first-page', true)); ?>',event);"></div>
+		<div class="<?php echo(strpos($_SERVER['REQUEST_URI'],"/question/")?"":"in") ?>active question" tabindex=0 onclick="jumpToURL('<?php echo(get_post_meta($post->ID, 'second-page', true)); ?>');"  onkeypress="jumpToCheckedURL('<?php echo(get_post_meta($post->ID, 'second-page', true)); ?>',event);"></div>
+		<div class="<?php echo(strpos($_SERVER['REQUEST_URI'],"/debate/")?"":"in") ?>active debate" tabindex=0 onclick="jumpToURL('<?php echo(get_post_meta($post->ID, 'third-page', true)); ?>');"  onkeypress="jumpToCheckedURL('<?php echo(get_post_meta($post->ID, 'third-page', true)); ?>',event);"></div>
+		<div class="<?php echo(strpos($_SERVER['REQUEST_URI'],"/comment/")?"":"in") ?>active comment" tabindex=0 onclick="jumpToURL('<?php echo(get_post_meta($post->ID, 'fourth-page', true)); ?>');"  onkeypress="jumpToCheckedURL('<?php echo(get_post_meta($post->ID, 'fourth-page', true)); ?>',event);"></div>
+		<div class="<?php echo(strpos($_SERVER['REQUEST_URI'],"/vote/")?"":"in") ?>active vote" tabindex=0 onclick="jumpToURL('<?php echo(get_post_meta($post->ID, 'fifth-page', true)); ?>');"  onkeypress="jumpToCheckedURL('<?php echo(get_post_meta($post->ID, 'fifth-page', true)); ?>',event);"></div>
 	</div>
 </div>
-
 <div id="centered-column" style="clear:both;">
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
@@ -28,7 +27,7 @@ get_header();
     </div>
 </div>
 
-<div id="next-button" onclick="window.location='<?php echo(get_post_meta($post->ID, 'next-page', true)); ?>'">
+<div id="next-button" onclick="jumpToURL('<?php echo(get_post_meta($post->ID, 'third-page', true)); ?>');" onkeypess="jumpToCheckedURL('<?php echo(get_post_meta($post->ID, 'third-page', true)); ?>',event);" tabindex=0>
 	> NOW, WATCH THE VIDEO DEBATE
 </div>
 <?php endwhile; ?>        
