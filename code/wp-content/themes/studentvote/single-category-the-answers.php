@@ -13,42 +13,22 @@ get_header();
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
 
-<div id="player"><div class="placeholder">Video Player</div></div>
+<div id="player"><div class="placeholder">Select a Video</div></div>
 
 <div id="the-answers">
 <?php the_content(__('(more...)')); ?>
 </div>
 
 <script type="text/javascript">
-      var tag = document.createElement('script');
-      tag.src = "http://www.youtube.com/player_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      function onYouTubePlayerAPIReady() {
-      }
-
-      var player = null;
-      function loadMovie(movieid){
-      	$(".placeholder").css("display","none");
-      	if(player!=null){
-      		player.loadVideoById(movieid);
-      	} else {
-	        player = new YT.Player('player', {
-	          height: '390',
-	          width: '640',
-	          videoId: movieid,
-	          events: {
-	            'onReady': onPlayerReady
-	          }
-	        });
-      	}
-      }
-
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-    </script>
+$f("player", "http://releases.flowplayer.org/swf/flowplayer-3.2.7.swf", {
+    plugins: {
+        controls: null
+    }
+});
+function loadMovie(src){
+      $f().play(src);
+}
+</script>
 <?php endwhile; ?>        
 <?php else: ?>
 
