@@ -28,7 +28,7 @@ get_header();
     </div>
 </div>
 
-<div id="next-button" onclick="window.location='<?php echo(get_post_meta($post->ID, 'next-page', true)); ?>'">
+<div id="next-button" onclick="jumpToURL('<?php echo(get_post_meta($post->ID, 'second-page', true)); ?>');" onkeypess="jumpToCheckedURL('<?php echo(get_post_meta($post->ID, 'second-page', true)); ?>',event);" tabindex=0>
 	> SEE THE QUESTION
 </div>
 <?php endwhile; ?>        
