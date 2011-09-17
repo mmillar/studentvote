@@ -735,13 +735,13 @@ body {
   width: 400px;
   float: left;
   padding-right: 120px;
+  font-size: 1.4em;
 }
 
 #centered-column .wp-polls-ans ul li label {
   width: 100%;
   display: block;
   text-align: center;
-  font-size: 1.4em;
   color: #a5221a;
   font-family: 'Oswald', sans-serif;
   margin-bottom: 7px;
