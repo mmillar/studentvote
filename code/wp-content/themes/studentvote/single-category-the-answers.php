@@ -20,7 +20,11 @@ get_header();
 </div>
 
 <script type="text/javascript">
-$f("player", "http://releases.flowplayer.org/swf/flowplayer-3.2.7.swf");
+$f("player", "http://releases.flowplayer.org/swf/flowplayer-3.2.7.swf",{ 
+	clip:{ 
+		scaling: 'orig'
+	}
+});
 function loadMovie(src){
       $f().play(src);
 }
