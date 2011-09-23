@@ -855,7 +855,7 @@ body {
 
 #right-column ul li.widget_polls-widget .wp-polls {
   font-family: Arial;
-  font-size: 0.8em;
+  font-size: 0.5em;
   color: black;
   text-shadow: none;
 }
@@ -880,6 +880,7 @@ body {
   position: relative;
   width: 165px;
   float: right;
+  font-size: 1.3em;
   text-align: left;
 }
 
