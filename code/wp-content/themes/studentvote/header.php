@@ -44,8 +44,8 @@
 	        <td align="right" width="72%" valign="bottom" style="padding-bottom:10px;">
 	        <table cellspacing="0" cellpadding="0" border="0">
 	          <tbody><tr>
-	            <td align="left" style="padding-right:17px;"><a class="toplink" href="home.php"><strong>English</strong></a></td>
-	            <td align="left" style="padding-right:12px;"><a class="toplink" href="http://www.voteetudiant.ca">Français</a></td>
+	            <td align="left" style="padding-right:17px;"><a class="toplink" href="http://election.studentvote.ca"><strong>English</strong></a></td>
+	            <td align="left" style="padding-right:12px;"><a class="toplink" href="http://electionfr.studentvote.ca">Français</a></td>
 	            <td align="left"><a target="_blank" href="http://www.facebook.com/pages/StudentVote/103385289724812?ref=ts#!/pages/StudentVote/103385289724812?v=wall&amp;ref=ts"><img height="22" border="0" width="22" alt="Facebook" src="<?php bloginfo('template_url'); ?>/images/structure/facebook.jpg" /></a></td>
 	            <td width="15"></td>
 	            <td><a target="_blank" href="http://twitter.com/studentvote"><img height="22" border="0" width="22" alt="Twitter" src="<?php bloginfo('template_url'); ?>/images/structure/twitter.jpg" /></a></td>
