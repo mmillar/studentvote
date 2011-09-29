@@ -28,7 +28,7 @@ get_header();
 </div>
 
 <div id="next-button" onclick="jumpToURL('<?php echo(get_post_meta($post->ID, 'third-page', true)); ?>');" onkeypess="jumpToCheckedURL('<?php echo(get_post_meta($post->ID, 'third-page', true)); ?>',event);" tabindex=0>
-	> NOW, WATCH THE VIDEO DEBATE
+	> Regardez à présent le débat
 </div>
 <?php endwhile; ?>        
 <?php else: ?>

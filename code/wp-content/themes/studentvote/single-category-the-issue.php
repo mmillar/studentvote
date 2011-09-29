@@ -29,7 +29,7 @@ get_header();
 </div>
 
 <div id="next-button" onclick="jumpToURL('<?php echo(get_post_meta($post->ID, 'second-page', true)); ?>');" onkeypess="jumpToCheckedURL('<?php echo(get_post_meta($post->ID, 'second-page', true)); ?>',event);" tabindex=0>
-	> SEE THE QUESTION
+	> VOYEZ LA QUESTION
 </div>
 <?php endwhile; ?>        
 <?php else: ?>

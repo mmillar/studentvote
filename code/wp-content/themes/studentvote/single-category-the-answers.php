@@ -4,7 +4,7 @@ get_header();
 <h1 class="page-header">
 	<div class="background">
 		<div class="title">
-			&middot; LEADERS - The Answers &middot;
+			&middot; <?php the_title(); ?> &middot;
 		</div>
 	</div>
 </h1>
@@ -13,7 +13,7 @@ get_header();
 <?php if (have_posts()) : ?>
 <?php while (have_posts()) : the_post(); ?>
 
-<div id="player"><div class="placeholder">Select a Video</div></div>
+<div id="player"><div class="placeholder">Choisir une video</div></div>
 
 <div id="the-answers">
 <?php the_content(__('(more...)')); ?>

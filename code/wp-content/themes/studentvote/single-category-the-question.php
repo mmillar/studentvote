@@ -4,7 +4,7 @@ get_header();
 <h1 class="page-header">
 	<div class="background">
 		<div class="title">
-			&middot; LEADERS - The Question &middot;
+			&middot; <?php the_title(); ?> &middot;
 		</div>
 	</div>
 </h1>
@@ -20,7 +20,7 @@ get_header();
 </div>
  -->
 <div id="next-button" onclick="window.location='<?php echo(get_post_meta($post->ID, 'next-page', true)); ?>'">
-	> LEADER ANSWERS
+	> Réponse d’un chef de parti
 </div>
 <?php endwhile; ?>        
 <?php else: ?>

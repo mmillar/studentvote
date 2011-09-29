@@ -60,7 +60,7 @@
     <div id="nav-section">
 	    <div class="nav-bar">
 			<div class="<?php echo((is_home())?"":"in") ?>active home" onclick="jumpToURL('<?php bloginfo('url'); ?>');" onkeypress="jumpToCheckedURL('<?php bloginfo('url'); ?>',event);" tabindex=1>Accueil</div>
-			<div class="<?php echo((is_page('Debates')||strpos($_SERVER['REQUEST_URI'],"debates/"))?"":"in") ?>active events" onclick="jumpToURL('<?php bloginfo('url'); ?>/debates');" onkeypress="jumpToCheckedURL('<?php bloginfo('url'); ?>/debates',event);" tabindex=2>Débat</div>
+			<div class="<?php echo((is_page('Debates')||strpos($_SERVER['REQUEST_URI'],"debates/"))?"":"in") ?>active events" onclick="jumpToURL('<?php bloginfo('url'); ?>/debates');" onkeypress="jumpToCheckedURL('<?php bloginfo('url'); ?>/debates',event);" tabindex=2>Débats</div>
 			<div class="<?php echo((is_page('Leaders')||strpos($_SERVER['REQUEST_URI'],"leaders/"))?"":"in") ?>active candidates" onclick="jumpToURL('<?php bloginfo('url'); ?>/leaders');" onkeypress="jumpToCheckedURL('<?php bloginfo('url'); ?>/leaders',event);" tabindex=3>Chefs de parti</div>
 			<div class="<?php echo((is_page('Candidates'))?"":"in") ?>active leaders" onclick="jumpToURL('<?php bloginfo('url'); ?>/candidates');" onkeypress="jumpToCheckedURL('<?php bloginfo('url'); ?>/candidates',event);" tabindex=4>Candidats</div>
 <!-- 			<div class="<?php echo((is_page('Survey')||strpos($_SERVER['REQUEST_URI'],"survey/"))?"":"in") ?>active survey" onclick="jumpToURL('<?php bloginfo('url'); ?>/survey');" onkeypress="jumpToCheckedURL('<?php bloginfo('url'); ?>/survey',event);" tabindex=5>SURVEY</div>
