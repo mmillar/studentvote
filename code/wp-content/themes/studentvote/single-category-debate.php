@@ -26,7 +26,7 @@ get_header();
 <?php the_content(__('(more...)')); ?>
 
 <div id="next-button" onclick="jumpToURL('<?php echo(get_post_meta($post->ID, 'fourth-page', true)); ?>');" onkeypess="jumpToCheckedURL('<?php echo(get_post_meta($post->ID, 'fourth-page', true)); ?>',event);" tabindex=0>
-	> DISCUSS THE TOPIC
+	> DISCUTEZ-EN
 </div>
 <?php endwhile; ?>        
 <?php else: ?>

@@ -19,7 +19,7 @@
   if (have_posts()): ?>
   
   <div id="debates">
-  	<h2 class="debate-header">Class Debates</h2>
+  	<h2 class="debate-header">Débats en salle de classe</h2>
 
 	<ol class="debate-listing"><?php
 	
@@ -36,7 +36,7 @@
         <li class="debate-item" id="post-<?php the_ID(); ?>">
     
           <h2 class="postTitle"><?php the_title(); ?></h2>
-          <small>Coming Soon</small>
+          <small>À venir</small>
     
         </li>
       <?php endif; ?>
